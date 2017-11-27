@@ -1,0 +1,21 @@
+h1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.bragger-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.bragger-btn {
+    margin: 0px 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
