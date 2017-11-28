@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { AppComponent } from './app.component';
 import { Timeline } from './../timeline/timeline';
 import { Home } from './../home/home';
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

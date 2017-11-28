@@ -1,2 +1,4 @@
-<button class="home-btn" 
-        (click)="goHome()">Home</button>
+<button class="home-btn" (click)="goHome()">Home</button>
+<div style="display: block">
+  <canvas baseChart [labels]="labels" [data]="data" [colors]="colorsUndefined" [chartType]="type"></canvas>
+</div>
