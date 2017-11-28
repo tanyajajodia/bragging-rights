@@ -1,13 +1,17 @@
-import { Home } from './../home/home';
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<router-outlet></router-outlet>`
 })
 export class AppComponent {
-
+  // @param router: initializes Angular's Router
+  // for navigation between components
+  constructor(private router: Router) {
+    // upon starting app, land on home view
+    this.router.navigateByUrl('../home');
+  }
 }
 
 
