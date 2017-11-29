@@ -11,9 +11,9 @@ import { Component } from '@angular/core';
 export class Timeline {
 
     name: string;
-    labels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-    data: number[] = [350, 450, 100];
-    type: string = 'doughnut';
+    labels: string[] = ['a', 'b', 'c'];
+    data: number[] = [5, 3, -5];
+    type: string = 'line';
 
     constructor(private router: Router) {}
 

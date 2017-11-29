@@ -1,0 +1,18 @@
+.mdc-button {
+    font-size: 24pt;
+    color: black;
+}
+
+.timeline-grid {
+    display: flex;
+}
+
+.emojis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+i {
+    font-size: 24pt;
+}
