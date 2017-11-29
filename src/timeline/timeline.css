@@ -10,9 +10,14 @@
 .emojis {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 25px 0;
 }
 
 i {
     font-size: 24pt;
+}
+
+canvas {
+    overflow-x: auto;
 }
