@@ -9,17 +9,17 @@ import { Component } from '@angular/core';
 
 export class Timeline {
 
-    yAxis: string[] = ['a', 'b', 'c', 'd', 'e', 'f'];
-    xAxis: Array<{data: number[], label: string}> = [{
-            data: [5, 3, -5, 1, 0, 3],
-            label: '' // may need to remove this
-        }];
     chartType: string = 'line';
-    chartOptions: any = {
-        legend: {
-            display: false,
+    xAxis: string[] = ['a', 'b', 'c', 'd', 'e', 'f'];
+    yAxis: any[] = [
+        {
+            data: [5, 3, -5, 1, 0, 3]
         },
-        scales: {
+    ];
+    // yAxis: number[] = [5, 3, -5, 1, 0, 3];
+    chartLegend: boolean = false;
+    chartOptions: any = {
+       scales: {
             yAxes: [{
                 gridLines: {
                     display: false
@@ -38,8 +38,15 @@ export class Timeline {
             }],
         }
     };
+    chartColors: any[] = [
+        // {
+        //     backgroundColor: '#66b2ff',
+        //     borderColor: '#198cff'
+        // }
+    ];
 
-    constructor(private router: Router) { }
+    constructor(private router: Router) {
+    }
 
     goHome() {
         this.router.navigateByUrl('../home');

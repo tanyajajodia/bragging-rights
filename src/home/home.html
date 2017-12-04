@@ -2,5 +2,5 @@
 <div class="bragger-div">
   <button class="mdc-button--raised" 
           *ngFor="let bragger of braggers"
-          (click)="goToTimeline()">{{bragger.name}}</button>
+          (click)="goToTimeline($event)">{{bragger.name}}</button>
 </div>

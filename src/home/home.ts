@@ -21,8 +21,9 @@ export class Home {
         this.braggers.push(this.paula);
     }
 
-    goToTimeline() {
-        this.router.navigateByUrl('../timeline');
+    goToTimeline(clickEvent) {
+        let bragger = clickEvent.target.innerText;
+        // this.router.navigateByUrl('../timeline');
     }
 }
 
