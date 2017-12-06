@@ -38,7 +38,7 @@ export class Home {
 }
 
 // defines a Bragger object
-interface Bragger {
+export interface Bragger {
     name: string;
     jobTitle: string;
     careerLength: number;
