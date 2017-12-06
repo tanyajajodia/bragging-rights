@@ -9,27 +9,31 @@ import { Router } from '@angular/router';
 
 export class Home {
 
-    public braggers: Array<Bragger> = [];
-
-    shae: Bragger = { name: 'Shae' };
-    amy: Bragger = { name: 'Amy' };
-    paula: Bragger = { name: 'Paula' };
+    braggerData: any = require('../braggersData.json');
+    braggers: Array<Bragger> = [];
 
     constructor(private router: Router) {
-        this.braggers.push(this.shae);
-        this.braggers.push(this.amy);
-        this.braggers.push(this.paula);
+        // add Braggers to the braggers array
+        // this is used to dynamically label the buttons on the home page
+        for ( let bragger of this.braggerData.braggers) {
+            this.braggers.push(bragger);
+        }
     }
 
+    // shows timeline data for specified bragger
     goToTimeline(clickEvent) {
-        let bragger = clickEvent.target.innerText;
-        // this.router.navigateByUrl('../timeline');
+        let bragger = this.braggers.find
+            (braggerObj => braggerObj.name === clickEvent.target.innerText);
+        console.log(bragger);
+        this.router.navigateByUrl('../timeline');
     }
 }
 
+// defines a Bragger object
 interface Bragger {
     name: string;
-    title?: Object;
+    jobTitle: string;
+    careerLength: number;
+    brag: string[];
+    bragValue: number[];
 }
-
-

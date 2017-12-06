@@ -1,19 +1,25 @@
 {
     "braggers" : [
         {
-            "name": "",
-            "notes": ["'a'", "'b'", "'c'", "'d'", "'e'", "'f'"],
-            "noteValues": [5, 3, -5, 1, 0, 3]
+            "name": "Shae",
+            "jobTitle": "Software Engineer, GE Digital",
+            "careerLength": "2",
+            "brag": ["'a'", "'b'", "'c'", "'d'", "'e'", "'f'"],
+            "bragValue": [5, 3, -5, 1, 0, 3]
         },
         {
-            "name": "",
-            "notes": ["'a'", "'b'", "'c'", "'d'", "'e'", "'f'"],
-            "noteValues": [4, -3, 0, 5, 0, 2]
+            "name": "Amy",
+            "jobTitle": "Sr UX Interaction Design, GE Digital",
+            "careerLength": "20",
+            "brag": ["'a'", "'b'", "'c'", "'d'", "'e'", "'f'"],
+            "bragValue": [4, -3, 0, 5, 0, 2]
         },
         {
-            "name": "",
-            "notes": ["'a'", "'b'", "'c'", "'d'", "'e'", "'f'"],
-            "noteValues": [-3, 2, -5, 5, 4, 1]
+            "name": "Paula",
+            "jobTitle": "Data Engineer, BHGE",
+            "careerLength": "30",
+            "brag": ["'a'", "'b'", "'c'", "'d'", "'e'", "'f'"],
+            "bragValue": [-3, 2, -5, 5, 4, 1]
         }
     ]
 }
