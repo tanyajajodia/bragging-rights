@@ -1,5 +1,6 @@
 import { Router } from '@angular/router';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { BraggerService } from './../services/bragger.service';
 
 @Component({
     selector: 'timeline',
@@ -14,7 +15,7 @@ export class Timeline {
     yAxis: any[] = [
         {
             data: [5, 3, -5, 1, 0, 3]
-        },
+        }
     ];
     // yAxis: number[] = [5, 3, -5, 1, 0, 3];
     chartLegend: boolean = false;
@@ -39,13 +40,13 @@ export class Timeline {
         }
     };
     chartColors: any[] = [
-        // {
-        //     backgroundColor: '#66b2ff',
-        //     borderColor: '#198cff'
-        // }
     ];
 
-    constructor(private router: Router) {
+    constructor( public braggerService: BraggerService, private router: Router ) {
+    }
+
+    get data() {
+        return this.braggerService.braggerServiceData;
     }
 
     goHome() {

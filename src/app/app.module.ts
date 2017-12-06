@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { Timeline } from './../timeline/timeline';
 import { Home } from './../home/home';
 import { RouterModule, Routes } from '@angular/router';
+import { BraggerService } from './../services/bragger.service';
 
 // sets the routes within the app
 const appRoutes: Routes = [
@@ -23,7 +24,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     ChartsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ BraggerService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
