@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, Input } from '@angular/core';
-import { BraggerService } from './../services/bragger.service';
+import { BraggerService } from './../../services/bragger.service';
 import { Bragger } from './../home/home';
 
 @Component({

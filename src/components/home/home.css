@@ -1,7 +1,8 @@
-.title-div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 424px;
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #005EB8;
 }
 
 h1 {
@@ -10,7 +11,6 @@ h1 {
     letter-spacing: 3px;
     font-size: 52px;
     margin-bottom: 0;
-    color: #005EB8;
 }
 
 h3 {
@@ -18,25 +18,32 @@ h3 {
     font-size: 20px;
     padding-right: 10px;
     text-align: right;
-    color: #005EB8;
 }
 
 .bragger-div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
     display: flex;
+    margin: 20px;
+    width: 100%;
     justify-content: center;
-    padding-top: 10px;
 }
 
 .mdc-button--raised {
     border-width: 0;
     background-color: white;
+    height: 300px;
+    width: 500px;
+    margin: 10px;
     color: black;
-    font-size: 14pt;
-    height: 36px;
-    padding: 0 16px;
-    border-radius: 2px;
-    margin: 6px 8px;
+    display: flex;
+    text-align: left;
 }
+
+.mdc-button--raised:focus {
+    outline: none;
+    border: 0;
+ }
+
+ img {
+     height: 274px;
+     margin: 10px;
+ }

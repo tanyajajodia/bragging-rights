@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Timeline } from './../timeline/timeline';
-import { BraggerService } from './../services/bragger.service';
+import { BraggerService } from './../../services/bragger.service';
+
 
 @Component({
     selector: 'home',
@@ -12,7 +13,7 @@ import { BraggerService } from './../services/bragger.service';
 export class Home {
 
     // variables
-    braggerData: any = require('../braggersData.json');
+    braggerData: any = require('./../../data/braggersData.json');
     braggers: Array<Bragger> = [];
 
 
