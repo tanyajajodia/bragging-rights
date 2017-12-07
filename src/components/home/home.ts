@@ -1,3 +1,4 @@
+import { element } from 'protractor';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Timeline } from './../timeline/timeline';
@@ -20,9 +21,7 @@ export class Home {
     // constructor dynamically labels the buttons on the home page
     // by adding json data to Bragger array
     constructor( public braggerService: BraggerService, private router: Router ) {
-        for ( let bragger of this.braggerData.braggers) {
-            this.braggers.push(bragger);
-        }
+        this.braggers = this.braggerData.braggers;
     }
 
     // set Bragger data in service for use in Timeline
@@ -31,9 +30,8 @@ export class Home {
     }
 
     // sets timeline for specified bragger and navigates to the timeline page
-    goToTimeline( clickEvent ) {
-        this.braggerService.braggerServiceData = this.braggers.find
-            (braggerObj => braggerObj.name === clickEvent.target.innerText);
+    goToTimeline( bragger ) {
+        this.braggerService.braggerServiceData = bragger;
         this.router.navigateByUrl('../timeline');
     }
 }
@@ -42,8 +40,10 @@ export class Home {
 export interface Bragger {
     name: string;
     jobTitle: string;
+    bu: string;
     careerLength: number;
     brag: string[];
     bragValue: number[];
+    imgName: string;
 }
 

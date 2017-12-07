@@ -30,12 +30,11 @@ h3 {
 .mdc-button--raised {
     border-width: 0;
     background-color: white;
-    height: 300px;
-    width: 500px;
+    min-height: 300px;
+    min-width: 450px;
     margin: 10px;
-    color: black;
+    color: #63666A;
     display: flex;
-    text-align: left;
 }
 
 .mdc-button--raised:focus {
@@ -43,7 +42,30 @@ h3 {
     border: 0;
  }
 
- img {
-     height: 274px;
-     margin: 10px;
+ .img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    max-height: 274px;
+    overflow: hidden;
+    margin: 10px;
+ }
+
+ .img-div img {
+    height: 300px;
+    width: auto;
+    flex-shrink: 0;
+ }
+
+ .bragger-info-div {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px;
+    max-width: 210px;
+ }
+
+ .bragger-name {
+     font-weight: 500;
  }
