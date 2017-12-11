@@ -1,3 +1,4 @@
+import { Chart } from 'chart.js';
 import { Router } from '@angular/router';
 import { Component, Input } from '@angular/core';
 import { BraggerService } from './../../services/bragger.service';
@@ -32,18 +33,17 @@ export class Timeline {
                 },
                 ticks: {
                     fontColor: '#63666A',
+                    fontSize: 16,
                     // callback only uses the year substring of the xAxis values
                     callback: function (xAxisValue) { return xAxisValue.substring(0, 4); }
                 }
             }],
         },
-        elements: {
-            line: {
-
-            }
-        },
         legend: {
-            display: true
+            display: true,
+            labels: {
+                boxWidth: 0
+            }
         },
         tooltips: {
             backgroundColor: '#63666A',
@@ -78,13 +78,16 @@ export class Timeline {
             pointBorderWidth: 1,
             pointHoverBackgroundColor: '#00B5E2',
             pointHoverBorderColor: 'white',
-            borderWidth: 3
+            borderWidth: 3,
+            defaultFontSize: 22
     }];
 
     constructor(public braggerService: BraggerService, private router: Router) {
         this.bragger = this.braggerService.braggerServiceData;
         this.xAxis = this.bragger.brag;
         this.yAxis[0].data = this.bragger.bragValue;
+        // console.log(Chart.defaults.global.tooltips);
+        Chart.defaults.global.defaultFontSize = 22;
     }
 
     get data() {
