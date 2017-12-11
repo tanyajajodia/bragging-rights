@@ -97,4 +97,13 @@ export class Timeline {
     goHome() {
         this.router.navigateByUrl('../home');
     }
+
+    traverseTimeline(keyPressed) {
+        if (keyPressed === 'ArrowRight') {
+            console.log('right');
+        }
+        else if (keyPressed === 'ArrowLeft') {
+            console.log('left');
+        }
+    }
 }
