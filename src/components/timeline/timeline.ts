@@ -15,40 +15,76 @@ export class Timeline {
     bragger: Bragger;
 
     chartType: string = 'line';
-    chartLegend: boolean = false;
+
     chartOptions: any = {
         scales: {
-             yAxes: [{
-                 gridLines: {
-                     display: false
-                 },
-                 ticks: {
-                     fontColor: 'white'
-                 }
-             }],
-             xAxes: [{
-                 gridLines: {
-                     display: false
-                 },
-                 ticks: {
-                     fontColor: 'white'
-                 }
-             }],
-         }
-     };
-    xAxis: string[] = [];
-    // yAxis: any[] = [
-    //     {
-    //         data: [5, 3, -5, 1, 0, 3]
-    //     }
-    // ];
-    yAxis: number[] = [];
-    chartColors: any[] = [];
+            yAxes: [{
+                gridLines: {
+                    display: false
+                },
+                ticks: {
+                    fontColor: 'white'
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
+                },
+                ticks: {
+                    fontColor: '#63666A',
+                    // callback only uses the year substring of the xAxis values
+                    callback: function (xAxisValue) { return xAxisValue.substring(0, 4); }
+                }
+            }],
+        },
+        elements: {
+            line: {
 
-    constructor( public braggerService: BraggerService, private router: Router ) {
+            }
+        },
+        legend: {
+            display: true
+        },
+        tooltips: {
+            backgroundColor: '#63666A',
+            callbacks: {
+                title: function (tooltipItems, data) {
+                    return data.labels[tooltipItems[0].index];
+                },
+                label: function (tooltipItem, data) {
+                    // empty label
+                }
+            },
+            titleFontStyle: 'lighter',
+            titlecornerRadiusSpacing: 0,
+            titleMarginBottom: 0
+        }
+    };
+
+    xAxis: string[] = [];
+
+    yAxis: any[] = [{
+        label: '',
+        data: []
+    }];
+
+    chartColors: any[] = [{
+            borderColor: '#005EB8',
+            backgroundColor: 'rgba(0, 94, 184, 0.5)',
+            pointRadius: 5,
+            pointHoverRadius: 6,
+            pointBackgroundColor: '#005EB8',
+            pointBorderColor: 'white',
+            pointBorderWidth: 1,
+            pointHoverBackgroundColor: '#00B5E2',
+            pointHoverBorderColor: 'white',
+            borderWidth: 3
+    }];
+
+    constructor(public braggerService: BraggerService, private router: Router) {
         this.bragger = this.braggerService.braggerServiceData;
         this.xAxis = this.bragger.brag;
-        this.yAxis = this.bragger.bragValue;
+        this.yAxis[0].data = this.bragger.bragValue;
     }
 
     get data() {
