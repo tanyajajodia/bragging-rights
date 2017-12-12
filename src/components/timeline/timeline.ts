@@ -21,7 +21,7 @@ export class Timeline {
         scales: {
             yAxes: [{
                 gridLines: {
-                    display: false
+                    display: true
                 },
                 ticks: {
                     fontColor: 'white'
