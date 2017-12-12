@@ -1,6 +1,12 @@
 .mdc-button {
     color: #63666A;
     margin-top: 5px;
+    font-size: 16px;
+}
+
+.mdc-button span {
+    padding: 5px;
+    vertical-align: sub;
 }
 
 .timeline-grid {

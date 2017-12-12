@@ -83,11 +83,16 @@ export class Timeline {
     }];
 
     constructor(public braggerService: BraggerService, private router: Router) {
+        // set chart data for bragger
         this.bragger = this.braggerService.braggerServiceData;
         this.xAxis = this.bragger.brag;
         this.yAxis[0].data = this.bragger.bragValue;
-        // console.log(Chart.defaults.global.tooltips);
+
+        // console.log(Chart.defaults);
+
+        // sets tooltip font-size
         Chart.defaults.global.defaultFontSize = 22;
+
     }
 
     get data() {
