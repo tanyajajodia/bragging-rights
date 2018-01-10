@@ -27,11 +27,12 @@ title {
 }
 
 .bragger-btn {
+    display: flex;
     background-color: white;
-    height: 200px;
-    width: 350px;
+    min-height: 300px;
+    min-width: 450px;
     color: #63666A;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: 500;
 }
