@@ -17,25 +17,25 @@ export class Home {
     braggers: Array<Bragger> = [];
 
 
-    // constructor dynamically labels the buttons on the home page
-    // by adding json data to Bragger array
+    // convert json data to Bragger data
     constructor( public braggerService: BraggerService, private router: Router ) {
         this.braggers = this.braggerData.braggers;
     }
 
-    // set Bragger data in service for use in Timeline
+    // set bragger data in service for use in braggers and sessions pages
     set data( value: any ) {
         this.braggerService.braggerServiceData = value;
     }
 
-    // sets timeline for specified bragger and navigates to the timeline page
-    goToTimeline( bragger ) {
-        this.braggerService.braggerServiceData = bragger;
-        this.router.navigateByUrl('../timeline');
+    // navigate to braggers page
+    goToBraggers( braggers ) {
+        this.braggerService.braggerServiceData = braggers;
+        this.router.navigateByUrl('../braggers');
     }
 
-    goToBraggers() {
-        this.router.navigateByUrl('../braggers');
+    // navigate to sessions page
+    goToSessions() {
+        this.router.navigateByUrl('../sessions');
     }
 }
 

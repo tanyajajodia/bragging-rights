@@ -8,10 +8,15 @@ title {
     display: block;
 }
 
-.mdc-button--raised {
-    border-width: 0;
+.bragger-div {
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.input-btn {
     background-color: #005EB8;
-    margin: 10px;
     color: white;
     align-self: flex-start;
     font-size: 20px;
@@ -21,7 +26,50 @@ title {
     padding: 10px;
 }
 
+.bragger-btn {
+    background-color: white;
+    height: 200px;
+    width: 350px;
+    color: #63666A;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mdc-button--raised {
+    border-width: 0;
+    margin: 10px;
+}
+
 .mdc-button--raised:focus {
     outline: none;
     border: 0;
+ }
+
+ .img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    max-height: 274px;
+    overflow: hidden;
+    margin: 10px;
+ }
+
+ .img-div img {
+    height: 300px;
+    width: auto;
+    flex-shrink: 0;
+ }
+
+ .bragger-info-div {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px;
+    max-width: 210px;
+ }
+
+ .bragger-name {
+     font-weight: 500;
  }
