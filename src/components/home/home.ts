@@ -33,6 +33,10 @@ export class Home {
         this.braggerService.braggerServiceData = bragger;
         this.router.navigateByUrl('../timeline');
     }
+
+    goToBraggers() {
+        this.router.navigateByUrl('../braggers');
+    }
 }
 
 // defines a Bragger object

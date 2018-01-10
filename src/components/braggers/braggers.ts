@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,7 +9,10 @@ import { Component } from '@angular/core';
 })
 
 export class Braggers {
-    constructor () {
 
+    constructor ( private router: Router ) {}
+
+    goToInput() {
+        this.router.navigateByUrl('../braggers/become-a-bragger');
     }
 }

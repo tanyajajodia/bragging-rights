@@ -10,7 +10,7 @@ export class AppComponent {
   // for navigation between components
   constructor(private router: Router) {
     // upon starting app, land on home view
-    this.router.navigateByUrl('../braggers');
+    this.router.navigateByUrl('../home');
   }
 }
 
