@@ -1,4 +1,3 @@
-import { element } from 'protractor';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Timeline } from './../timeline/timeline';
