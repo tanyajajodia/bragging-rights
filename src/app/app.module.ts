@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { Home } from './../components/home/home';
 import { Timeline } from './../components/timeline/timeline';
 import { Title } from './../components/title/title';
+import { Menu } from './../components/menu/menu';
 import { Braggers } from './../components/braggers/braggers';
 import { BraggerInput } from './../components/input/bragger-input';
 import { RouterModule, Routes } from '@angular/router';
@@ -16,7 +17,7 @@ const appRoutes: Routes = [
   { path: '../home', component: Home },
   { path: '../timeline', component: Timeline },
   { path: '../braggers', component: Braggers},
-  { path: '../braggers/become-a-bragger', component: BraggerInput}
+  { path: '../become-a-bragger', component: BraggerInput}
 ];
 
 @NgModule({
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
     Home,
     Timeline,
     Title,
+    Menu,
     Braggers,
     BraggerInput
   ],
