@@ -11,18 +11,8 @@ import { BraggerService } from './../../services/bragger.service';
 
 export class Home {
 
-    // variables
-    braggerData: any = require('./../../data/braggersData.json');
+    constructor( private router: Router ) {}
 
-    // convert json data to Bragger data
-    constructor( public braggerService: BraggerService, private router: Router ) {
-        this.braggerService.braggerServiceData = this.braggerData.braggers;
-    }
-
-    // set bragger data in service
-    set data( value: any ) {
-        this.braggerService.braggerServiceData = value;
-    }
 }
 
 // defines a Bragger object
