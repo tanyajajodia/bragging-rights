@@ -28,11 +28,6 @@ export class Braggers {
         this.braggerService.braggerServiceData = value;
     }
 
-    // navigate to bragger input page
-    goToInput() {
-        this.router.navigateByUrl('../braggers/become-a-bragger');
-    }
-
     // set timeline for specified bragger and navigate to the timeline page
     goToTimeline( bragger ) {
         this.braggerService.braggerServiceData = bragger;
