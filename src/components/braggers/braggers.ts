@@ -15,7 +15,7 @@ export class Braggers {
     braggers: Array<Bragger> = [];
 
     constructor ( public braggerService: BraggerService, private router: Router ) {
-        this.braggers = this.braggerService.getBraggerArray();
+        this.braggers = this.braggerService.getSortedByNameBraggerArray();
     }
 
     // set timeline for specified bragger and navigate to the timeline page

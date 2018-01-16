@@ -14,4 +14,21 @@ export class BraggerService {
     getBraggerArray() {
         return this.braggers;
     }
+
+    getSortedByNameBraggerArray() {
+        this.braggers.sort(( bragger1, bragger2 ) => {
+
+            if ( bragger1.name > bragger2.name ) {
+                return 1;
+            }
+
+            if ( bragger1.name < bragger2.name ) {
+                return -1;
+            }
+
+            return 0;
+        });
+
+        return this.braggers;
+    }
 }
