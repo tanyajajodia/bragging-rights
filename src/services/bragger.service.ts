@@ -18,11 +18,14 @@ export class BraggerService {
     getSortedByNameBraggerArray() {
         this.braggers.sort(( bragger1, bragger2 ) => {
 
-            if ( bragger1.name > bragger2.name ) {
+            let name1 = bragger1.name.toUpperCase();
+            let name2 = bragger2.name.toUpperCase();
+
+            if ( name1 > name2 ) {
                 return 1;
             }
 
-            if ( bragger1.name < bragger2.name ) {
+            if ( name1 < name2 ) {
                 return -1;
             }
 
