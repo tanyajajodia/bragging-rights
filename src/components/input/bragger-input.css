@@ -6,8 +6,5 @@
 
 menu {
     width: 100%;
-}
-
-title {
-    display: block;
+    padding: 0;
 }

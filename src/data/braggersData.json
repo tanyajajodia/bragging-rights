@@ -36,7 +36,8 @@
                         "2017: Created this web app"      
             ],
             "bragValue": [5, -3, -5, 5, 4, 5, -4, 4, 4, 5, 3, 3, 2, -3, 3, 3, -4, -3, 5, 4, -2, 5, -5, 4, 5, -2, -3, 4],
-            "imgName": "Shae.JPG"
+            "imgName": "Shae.JPG",
+            "sessionDate": "December 2017"
         },
         {
             "name": "Amy Dalton",
@@ -76,7 +77,8 @@
                         "2017: Engaged"
                     ],
             "bragValue": [5, 5, 2, 3, 3, 4, 3, 2, 5, 1, 5, -5, -1, 2, 2, -5, 2, 5, 4, 0, 2, 2, 3, 4, 5, 5, 5, 5, 3, 5],
-            "imgName": "Amy.JPG"
+            "imgName": "Amy.JPG",
+            "sessionDate": "December 2017"
         },
         {
             "name": "Paula Karnes",
@@ -103,7 +105,8 @@
                         "2017: GE considers financial withdrawal from BHGE"
             ],
             "bragValue": [-5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, -5, 5, -3, 5, 3, -4],
-            "imgName": "Paula.JPG"
+            "imgName": "Paula.JPG",
+            "sessionDate": "January 2018"
         }
     ]
 }

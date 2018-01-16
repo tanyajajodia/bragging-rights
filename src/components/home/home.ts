@@ -24,5 +24,6 @@ export interface Bragger {
     brag: string[];
     bragValue: number[];
     imgName: string;
+    sessionDate: Date;
 }
 
