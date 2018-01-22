@@ -9,6 +9,7 @@ import { Menu } from './../components/menu/menu';
 import { Braggers } from './../components/braggers/braggers';
 import { BraggerInput } from './../components/input/bragger-input';
 import { Sessions } from './../components/sessions/sessions';
+import { BecomeBragger } from './../components/become-a-bragger/become-a-bragger';
 import { RouterModule, Routes } from '@angular/router';
 import { BraggerService } from './../services/bragger.service';
 
@@ -18,7 +19,7 @@ const appRoutes: Routes = [
   { path: '../home', component: Home },
   { path: '../timeline', component: Timeline },
   { path: '../braggers', component: Braggers },
-  { path: '../become-a-bragger', component: BraggerInput },
+  { path: '../become-a-bragger', component: BecomeBragger },
   { path: '../bragging-sessions', component: Sessions }
 ];
 
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     Menu,
     Braggers,
     BraggerInput,
-    Sessions
+    Sessions,
+    BecomeBragger
   ],
   imports: [
     BrowserModule,
