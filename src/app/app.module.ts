@@ -8,6 +8,7 @@ import { Title } from './../components/title/title';
 import { Menu } from './../components/menu/menu';
 import { Braggers } from './../components/braggers/braggers';
 import { BraggerInput } from './../components/input/bragger-input';
+import { Sessions } from './../components/sessions/sessions';
 import { RouterModule, Routes } from '@angular/router';
 import { BraggerService } from './../services/bragger.service';
 
@@ -16,8 +17,9 @@ import { BraggerService } from './../services/bragger.service';
 const appRoutes: Routes = [
   { path: '../home', component: Home },
   { path: '../timeline', component: Timeline },
-  { path: '../braggers', component: Braggers},
-  { path: '../become-a-bragger', component: BraggerInput}
+  { path: '../braggers', component: Braggers },
+  { path: '../become-a-bragger', component: BraggerInput },
+  { path: '../bragging-sessions', component: Sessions }
 ];
 
 @NgModule({
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     Title,
     Menu,
     Braggers,
-    BraggerInput
+    BraggerInput,
+    Sessions
   ],
   imports: [
     BrowserModule,

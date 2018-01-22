@@ -19,7 +19,7 @@ export class Menu {
 
     // navigate to sessions page
     goToSessions() {
-        this.router.navigateByUrl('../sessions');
+        this.router.navigateByUrl('../bragging-sessions');
     }
 
     // navigate to braggers page

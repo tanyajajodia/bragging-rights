@@ -1,0 +1,44 @@
+.sessions-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+menu {
+    width: 100%;
+    padding: 0;
+}
+
+title {
+    display: block;
+}
+
+.sessions-div {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.mdc-button--raised {
+    display: flex;
+    justify-content: center;
+    border-width: 0;
+    margin: 10px;
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    color: #63666A;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.mdc-button--raised:focus {
+    outline: none;
+    border: 0;
+ }
+
+ .braggers-name {
+     font-weight: 500; 
+ }
