@@ -1,0 +1,67 @@
+.braggers-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+menu {
+    width: 100%;
+    padding: 0;
+}
+
+title {
+    display: block;
+}
+
+.bragger-div {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 1410px;
+}
+
+.mdc-button--raised {
+    display: flex;
+    border-width: 0;
+    margin: 10px;
+    background-color: white;
+    min-height: 300px;
+    min-width: 450px;
+    color: #63666A;
+    text-align: left;
+    font-size: 20px;
+}
+
+.mdc-button--raised:focus {
+    outline: none;
+    border: 0;
+ }
+
+ .img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    max-height: 274px;
+    overflow: hidden;
+    margin: 10px;
+ }
+
+ .img-div img {
+    height: 300px;
+    width: auto;
+    flex-shrink: 0;
+ }
+
+ .bragger-info-div {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px;
+    max-width: 210px;
+ }
+
+ .bragger-name {
+     font-weight: 500;
+ }

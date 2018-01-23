@@ -1,21 +1,5 @@
 <div class="home-page">
-  <div class="title-div">
-    <h1>Bragging Rights</h1>
-    <h3>My Highs and Lows </h3>
-  </div>
-
-  <div class="bragger-div">
-    <button class="mdc-button--raised" *ngFor="let bragger of braggers" (click)="goToTimeline(bragger)">
-        <div class="img-div">
-          <img src="./../../assets/img/{{bragger.imgName}}">
-        </div>  
-        
-        <div class="bragger-info-div">
-          <p class="bragger-name">{{bragger.name}}</p>
-          <p>{{bragger.jobTitle}}</p>
-          <p>{{bragger.bu}}</p>
-          <p>Career length: {{bragger.careerLength}}+</p>
-        </div>
-      </button>
-  </div>
+  <menu></menu>
+  <title></title>
+  <div class="home-div"></div>
 </div>
