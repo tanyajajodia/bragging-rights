@@ -18,7 +18,8 @@ title {
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap;
-    width: 1410px;
+    justify-content: center;
+    width: calc(100% - 50px);
 }
 
 .mdc-button--raised {
@@ -26,11 +27,10 @@ title {
     border-width: 0;
     margin: 10px;
     background-color: white;
-    min-height: 300px;
-    min-width: 450px;
     color: #63666A;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.25em;
+    width: 419px;
 }
 
 .mdc-button--raised:focus {
@@ -65,3 +65,18 @@ title {
  .bragger-name {
      font-weight: 500;
  }
+
+ /* responsive design */
+
+ @media (min-width: 1383px) {
+     .bragger-div {
+         justify-content: flex-start;
+     }
+ }
+
+ @media (min-width: 1400px) {
+    .bragger-div {
+        justify-content: flex-start;
+        width: 1335px;
+    }
+}
