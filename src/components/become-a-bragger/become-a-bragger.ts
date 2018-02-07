@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
+import { Menu } from '../menu/menu';
 
 
 @Component({
@@ -7,8 +8,15 @@ import { Component } from '@angular/core';
     styleUrls: [ 'become-a-bragger.css' ]
 })
 
-export class BecomeBragger {
+export class BecomeBragger implements AfterViewInit {
+
+    @ViewChild(Menu) menuComponent: Menu;
 
     constructor() {}
+
+    // highlights menu according to what page you are currently viewing
+    ngAfterViewInit() {
+        this.menuComponent.isActive('become');
+    }
 
 }

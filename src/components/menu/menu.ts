@@ -27,13 +27,17 @@ export class Menu {
         this.router.navigateByUrl('../braggers');
     }
 
-    // navigate to bragger input page
-    goToInput() {
+    // navigate to become a bragger page
+    goToBecome() {
         this.router.navigateByUrl('../become-a-bragger');
     }
 
     // navigate to suggest a bragger page
     goToSuggest() {
-        this.router.navigateByUrl('../suggest-a-bragger');
+        // this.router.navigateByUrl('../suggest-a-bragger');
+    }
+
+    isActive( id: string ) {
+        document.getElementById(id).classList.toggle('active');
     }
 }
