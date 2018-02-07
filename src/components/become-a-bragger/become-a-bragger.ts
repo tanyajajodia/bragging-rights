@@ -19,4 +19,6 @@ export class BecomeBragger implements AfterViewInit {
         this.menuComponent.isActive('become');
     }
 
+    submit() {}
+
 }
