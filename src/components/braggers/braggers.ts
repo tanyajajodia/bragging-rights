@@ -28,6 +28,6 @@ export class Braggers implements AfterViewInit {
     // set timeline for specified bragger and navigate to the timeline page
     goToTimeline( bragger ) {
         this.braggerService.braggerServiceData = bragger;
-        this.router.navigateByUrl('../timeline');
+        this.router.navigateByUrl('braggers/timeline');
     }
 }

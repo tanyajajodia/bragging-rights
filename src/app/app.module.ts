@@ -16,11 +16,11 @@ import { BraggerService } from './../services/bragger.service';
 
 // sets the routes within the app
 const appRoutes: Routes = [
-  { path: '../home', component: Home },
-  { path: '../timeline', component: Timeline },
-  { path: '../braggers', component: Braggers },
-  { path: '../become-a-bragger', component: BecomeBragger },
-  { path: '../bragging-sessions', component: Sessions }
+  { path: 'home', component: Home },
+  { path: 'braggers/timeline', component: Timeline },
+  { path: 'braggers', component: Braggers },
+  { path: 'become-a-bragger', component: BecomeBragger },
+  { path: 'sessions', component: Sessions }
 ];
 
 @NgModule({

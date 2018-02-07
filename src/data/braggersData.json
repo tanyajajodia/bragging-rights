@@ -36,7 +36,7 @@
                         "2017: Created this web app"      
             ],
             "bragValue": [5, -3, -5, 5, 4, 5, -4, 4, 4, 5, 3, 3, 2, -3, 3, 3, -4, -3, 5, 4, -2, 5, -5, 4, 5, -2, -3, 4],
-            "imgName": "Shae.JPG",
+            "imgName": "AmbyrShae.JPG",
             "sessionDate": "December 2017"
         },
         {
@@ -77,36 +77,8 @@
                         "2017: Engaged"
                     ],
             "bragValue": [5, 5, 2, 3, 3, 4, 3, 2, 5, 1, 5, -5, -1, 2, 2, -5, 2, 5, 4, 0, 2, 2, 3, 4, 5, 5, 5, 5, 3, 5],
-            "imgName": "Amy.JPG",
+            "imgName": "AmyDalton.JPG",
             "sessionDate": "December 2017"
-        },
-        {
-            "name": "Paula Karnes",
-            "jobTitle": "Data Engineer",
-            "bu": "BHGE",
-            "careerLength": "30",
-            "brag": [
-                        "1976: Discouragement to pursue CS", 
-                        "1979: AA Degree in Business", 
-                        "1980: Entrance to LA Police Department", 
-                        "1980: Accepted Union Bank Programmer Training",
-                        "1981: Graduated Union Bank Programmer Training",
-                        "1986: US travel in RV for a year",
-                        "1990: Daughter born",
-                        "1995: Employee of the Year",
-                        "1996: Promotion to Sr Programmer Analyst",
-                        "1997: BS in Business Management",
-                        "2002: Washington Mutual",
-                        "2007: Laid off",
-                        "2013: GE Capital",
-                        "2015: GE Capital divestiture",
-                        "2015: GE Oil & Gas",
-                        "2017: Baker Hughes merger",
-                        "2017: GE considers financial withdrawal from BHGE"
-            ],
-            "bragValue": [-5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, -5, 5, -3, 5, 3, -4],
-            "imgName": "Paula.JPG",
-            "sessionDate": ""
         },
         {
             "name": "Aimee Miller",
@@ -152,8 +124,37 @@
                       "2018: Baby Miller #2 due" 
             ],
             "bragValue": [5, 5, 3, 4, -5, 4, 4, 4, 2, 4, 4, 5, 5, 4, 4, 4, 2, 3, 0, 3, 5, 5, 1, 3, -4, 4, 2, 3, -3, 5, 4, 1, 4, 4, 4, 5],
-            "imgName": "Aimee.JPG",
+            "imgName": "AimeeMiller.JPG",
             "sessionDate": "January 2018"
+        },
+        {
+            "name": "Janet Genusa",
+            "jobTitle": "Lead Quality Assurance Analyst",
+            "bu": "GE Digital",
+            "careerLength": "30",
+            "brag": [
+                     "1981: Graduated HS",
+                     "1985: Moved to Austin, TX and started used cars career",
+                     "1993: Graduated MS State",
+                     "1993: Landmark Genetics",
+                     "1996: Sold the family business - dairy farm",
+                     "1997: Divorce",
+                     "2000: Marketing Manager / IT Manager for a local A-B Wholesaler",
+                     "2006: Career shift - QA Analyst with BearingPoint",
+                     "2008: Dad passed away",
+                     "2009: BearingPoint bankruptcy - moved to Deloitte Consulting",
+                     "2010: Daughter graduated college",
+                     "2012: Grandchildren born",
+                     "2014: Promotion to Manager - relocation to Orlando",
+                     "2014: GE Capital",
+                     "2015: GE Power",
+                     "2017: Divorce",
+                     "2017: Moved to New Orleans",
+                     "2018: Core Engineering pod" 
+            ],
+            "bragValue": [4, 2, 2, 3, -4, -4, 2, 3, -4, -2, 5, 4, -3, 4, 4, 1, 4, 4, -5],
+            "imgName": "JanetGenusa.JPG",
+            "sessionDate": "February 2018"
         }
     ]
 }

@@ -14,27 +14,27 @@ export class Menu {
 
     // navigate to home page
     goHome() {
-        this.router.navigateByUrl('../home');
+        this.router.navigateByUrl('home');
     }
 
     // navigate to sessions page
     goToSessions() {
-        this.router.navigateByUrl('../bragging-sessions');
+        this.router.navigateByUrl('sessions');
     }
 
     // navigate to braggers page
     goToBraggers() {
-        this.router.navigateByUrl('../braggers');
+        this.router.navigateByUrl('braggers');
     }
 
     // navigate to become a bragger page
     goToBecome() {
-        this.router.navigateByUrl('../become-a-bragger');
+        this.router.navigateByUrl('become-a-bragger');
     }
 
     // navigate to suggest a bragger page
     goToSuggest() {
-        // this.router.navigateByUrl('../suggest-a-bragger');
+        // this.router.navigateByUrl('suggest-a-bragger');
     }
 
     isActive( id: string ) {
