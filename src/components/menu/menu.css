@@ -9,3 +9,8 @@
     font-size: 1.125em;
     font-weight: lighter;
 }
+
+.active {
+    color: white;
+    background: #00B5E2;
+}

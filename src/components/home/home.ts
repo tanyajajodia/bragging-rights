@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { BraggerService } from './../../services/bragger.service';
+import { Menu } from './../menu/menu';
 
 
 @Component({
@@ -9,9 +10,16 @@ import { BraggerService } from './../../services/bragger.service';
     styleUrls: [ 'home.css' ]
 })
 
-export class Home {
+export class Home implements AfterViewInit {
+
+    @ViewChild(Menu) menuComponent: Menu;
 
     constructor( private router: Router ) {}
+
+    // highlights menu according to what page you are currently viewing
+    ngAfterViewInit() {
+        this.menuComponent.isActive('home');
+    }
 
 }
 
