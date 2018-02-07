@@ -1,6 +1,6 @@
 # BraggingRights
 
-This web app was born out of. 
+This web app was born out of my incessant boredom of defects and never changing techstack. 
 
 It is currently being used for the Bragging Rights sessions held by the Women's Network at my current job. 
 
