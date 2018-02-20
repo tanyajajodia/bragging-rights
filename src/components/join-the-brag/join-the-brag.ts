@@ -3,12 +3,12 @@ import { Menu } from '../menu/menu';
 
 
 @Component({
-    selector: 'become-a-bragger',
-    templateUrl: 'become-a-bragger.html',
-    styleUrls: [ 'become-a-bragger.css' ]
+    selector: 'join-the-brag',
+    templateUrl: 'join-the-brag.html',
+    styleUrls: [ 'join-the-brag.css' ]
 })
 
-export class BecomeBragger implements AfterViewInit {
+export class Join implements AfterViewInit {
 
     @ViewChild(Menu) menuComponent: Menu;
 
@@ -16,7 +16,7 @@ export class BecomeBragger implements AfterViewInit {
 
     // highlights menu according to what page you are currently viewing
     ngAfterViewInit() {
-        this.menuComponent.isActive('become');
+        this.menuComponent.isActive('join');
     }
 
     submit() {}
