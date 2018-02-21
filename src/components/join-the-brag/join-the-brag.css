@@ -13,12 +13,16 @@ title {
     display: block;
 }
 
-.bab-div {
+.form-div {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    width: 100%;
+    width: 500px;
     align-items: center;
+}
+
+label {
+    width: 80%;
 }
 
 .mdc-button--raised {
@@ -35,4 +39,23 @@ title {
 .mdc-button--raised:focus {
     outline: none;
     border: 0;
+ }
+
+ .mdc-button {
+    border-width: 0;
+    margin: 10px;
+    color: var(--primary-grey);
+    font-size: 1.125em;
+    font-weight: lighter;
+}
+
+.mdc-button:focus {
+    outline: none;
+    border: 0;
+ }
+
+ .buttons-div {
+    font-size: 1.125em;
+    font-weight: lighter;
+    color: var(--primary-grey);
  }

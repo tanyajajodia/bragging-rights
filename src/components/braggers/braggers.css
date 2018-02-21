@@ -27,7 +27,7 @@ title {
     border-width: 0;
     margin: 10px;
     background-color: white;
-    color: #63666A;
+    color: var(--primary-grey);
     text-align: left;
     font-size: 1.25em;
     width: 419px;

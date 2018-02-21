@@ -1,9 +1,37 @@
 <div class="become-a-bragger-page">
-    <menu></menu>
-    <title></title>
-    <div class="bab-div mdc-text-field">
-        <input>
-        <input>
-        <button class="mdc-button--raised" (click)="submit()">Submit</button>
-    </div>
+  <menu></menu>
+  <title></title>
+  <div class="buttons-div">
+    <button class="mdc-button">Become a bragger</button>
+    <button class="mdc-button">Suggest a bragger</button>
   </div>
+  <div class="form-div">
+    <label class="mdc-text-field mdc-text-field--upgraded">
+        <input type="text" class="mdc-text-field__input">
+        <span class="mdc-text-field__label">Your first name</span>
+        <div class="mdc-line-ripple"></div>
+    </label>
+    <label class="mdc-text-field mdc-text-field--upgraded">
+        <input type="text" class="mdc-text-field__input">
+        <span class="mdc-text-field__label">Your last name</span>
+        <div class="mdc-line-ripple"></div>
+    </label>
+    <label class="mdc-text-field mdc-text-field--upgraded">
+        <input type="text" class="mdc-text-field__input">
+        <span class="mdc-text-field__label">Your email</span>
+    </label>
+    <label class="mdc-text-field mdc-text-field--upgraded">
+        <input type="text" class="mdc-text-field__input">
+        <span class="mdc-text-field__label">Nominee's first name</span>
+    </label>
+    <label class="mdc-text-field mdc-text-field--upgraded">
+        <input type="text" class="mdc-text-field__input">
+        <span class="mdc-text-field__label">Nominee's last name</span>
+    </label>
+    <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--upgraded">
+        <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+        <label for="textarea" class="mdc-text-field__label">Textarea Label</label>
+    </div>
+    <button class="mdc-button--raised" (click)="submit()">Submit</button>
+  </div>
+</div>
