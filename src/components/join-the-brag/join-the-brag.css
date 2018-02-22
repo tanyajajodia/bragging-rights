@@ -32,7 +32,7 @@ title {
     border: 0;
  }
 
- .active {
+ .active-btn {
     color: white;
     background: var(--secondary-blue);
  }
@@ -66,16 +66,16 @@ h3 {
     color: var(--secondary-blue);
 }
 
+.mdc-text-field-focus > span {
+    color: var(--secondary-blue);
+}
+
 .mdc-text-field__input:hover {
     border-color: var(--secondary-blue);
 }
 
 .mdc-text-field__input:focus {
     border-color: var(--secondary-blue);
-}
-
-.mdc-text-field__label--float-above {
-    color: var(--secondary-blue);
 }
 
 .mdc-button--raised {
@@ -94,7 +94,7 @@ h3 {
     border: 0;
  }
 
- .disabled-txt {
+.disabled-txt {
     color:  var(--secondary-grey);
 }
 

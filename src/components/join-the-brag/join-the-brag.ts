@@ -32,10 +32,12 @@ export class Join implements AfterViewInit {
     onFocus(event) {
         event.target.parentNode.classList.add('mdc-text-field--focused');
         event.target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
+        event.target.parentNode.classList.add('mdc-text-field-focus');
     }
 
     onBlur(event) {
         event.target.parentNode.classList.remove('mdc-text-field--focused');
+        event.target.parentNode.classList.remove('mdc-text-field-focus');
         if (event.target.value === '') {
             event.target.nextElementSibling.classList.remove('mdc-text-field__label--float-above');
         }
