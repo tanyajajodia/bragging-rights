@@ -19,6 +19,28 @@ export class Join implements AfterViewInit {
         this.menuComponent.isActive('join');
     }
 
+    becomeABragger() {
+        document.getElementById('become').classList.add('active');
+        document.getElementById('suggest').classList.remove('active');
+    }
+
+    suggestABragger() {
+        document.getElementById('suggest').classList.add('active');
+        document.getElementById('become').classList.remove('active');
+    }
+
+    onFocus(event) {
+        event.target.parentNode.classList.add('mdc-text-field--focused');
+        event.target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
+    }
+
+    onBlur(event) {
+        event.target.parentNode.classList.remove('mdc-text-field--focused');
+        if (event.target.value === '') {
+            event.target.nextElementSibling.classList.remove('mdc-text-field__label--float-above');
+        }
+    }
+
     submit() {}
 
 }

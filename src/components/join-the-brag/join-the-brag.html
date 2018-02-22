@@ -1,37 +1,46 @@
-<div class="become-a-bragger-page">
+<div class="join-the-brag-page">
   <menu></menu>
   <title></title>
   <div class="buttons-div">
-    <button class="mdc-button">Become a bragger</button>
-    <button class="mdc-button">Suggest a bragger</button>
+    <button id="become" class="mdc-button active" (click)="becomeABragger()">Become a bragger</button>
+    <button id="suggest" class="mdc-button" (click)="suggestABragger()">Suggest a bragger</button>
   </div>
   <div class="form-div">
-    <label class="mdc-text-field mdc-text-field--upgraded">
-        <input type="text" class="mdc-text-field__input">
-        <span class="mdc-text-field__label">Your first name</span>
-        <div class="mdc-line-ripple"></div>
-    </label>
-    <label class="mdc-text-field mdc-text-field--upgraded">
-        <input type="text" class="mdc-text-field__input">
-        <span class="mdc-text-field__label">Your last name</span>
-        <div class="mdc-line-ripple"></div>
-    </label>
-    <label class="mdc-text-field mdc-text-field--upgraded">
-        <input type="text" class="mdc-text-field__input">
-        <span class="mdc-text-field__label">Your email</span>
-    </label>
-    <label class="mdc-text-field mdc-text-field--upgraded">
-        <input type="text" class="mdc-text-field__input">
-        <span class="mdc-text-field__label">Nominee's first name</span>
-    </label>
-    <label class="mdc-text-field mdc-text-field--upgraded">
-        <input type="text" class="mdc-text-field__input">
-        <span class="mdc-text-field__label">Nominee's last name</span>
-    </label>
-    <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--upgraded">
-        <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
-        <label for="textarea" class="mdc-text-field__label">Textarea Label</label>
+    <div class="form-info-div">
+        <h3>Your information:</h3>
+        <label class="mdc-text-field mdc-text-field--upgraded">
+            <input type="text" class="mdc-text-field__input" 
+                   (focus)="onFocus($event)" 
+                   (blur)="onBlur($event)" 
+                   required>
+            <span class="mdc-text-field__label">First Name</span>  
+        </label>
+        <label class="mdc-text-field mdc-text-field--upgraded">
+            <input type="text" class="mdc-text-field__input" 
+                   (focus)="onFocus($event)" 
+                   (blur)="onBlur($event)" 
+                   required>
+            <span class="mdc-text-field__label">Last Name</span>
+        </label>
+        <label class="mdc-text-field mdc-text-field--upgraded">
+            <input type="text" class="mdc-text-field__input" 
+                   (focus)="onFocus($event)" 
+                   (blur)="onBlur($event)" 
+                   required>
+            <span class="mdc-text-field__label">Email</span>
+        </label>
     </div>
-    <button class="mdc-button--raised" (click)="submit()">Submit</button>
+    <div class="form-info-div">
+      <h3 class="disabled-txt">Their information:</h3>
+        <label class="mdc-text-field mdc-text-field--upgraded mdc-text-field--disabled">
+            <input type="text" class="mdc-text-field__input" disabled>
+            <span class="mdc-text-field__label">First Name</span>
+        </label>
+        <label class="mdc-text-field mdc-text-field--upgraded mdc-text-field--disabled">
+            <input type="text" class="mdc-text-field__input" disabled>
+            <span class="mdc-text-field__label">Last Name</span>
+        </label>
+    </div>
+    <button class="mdc-button mdc-button--raised disabled-btn" (click)="submit()" disabled>Submit</button>
   </div>
 </div>
