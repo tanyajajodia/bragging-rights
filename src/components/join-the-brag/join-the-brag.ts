@@ -11,7 +11,6 @@ import { Menu } from '../menu/menu';
 export class Join implements AfterViewInit {
 
     @ViewChild(Menu) menuComponent: Menu;
-    emailRegex = '/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/';
     becomeBtnActive = true;
     suggestBtnActive = false;
     formDisabled = true;
@@ -37,8 +36,8 @@ export class Join implements AfterViewInit {
 
     onFocus(event) {
         event.target.parentNode.classList.add('mdc-text-field--focused');
-        event.target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
         event.target.parentNode.classList.add('mdc-text-field-focus');
+        event.target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
     }
 
     onBlur(event) {

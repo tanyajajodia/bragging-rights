@@ -29,9 +29,9 @@
             <span class="mdc-text-field__label">Last Name</span>
         </label>
         <label class="mdc-text-field mdc-text-field--upgraded">
-            <input type="email" 
+            <input type="email"
+                   pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
                    class="mdc-text-field__input"
-                   pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" 
                    (focus)="onFocus($event)" 
                    (blur)="onBlur($event)"
                    (keyup)="checkValidity($event)" 
