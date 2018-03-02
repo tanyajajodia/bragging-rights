@@ -48,7 +48,7 @@
                    (focus)="onFocus($event)" 
                    (blur)="onBlur($event)"
                    (keyup)="checkValidity($event)" 
-                   required
+                   [required]="!formDisabled"
                    [disabled]="formDisabled">
             <span class="mdc-text-field__label">First Name</span>
         </label>
@@ -59,7 +59,7 @@
                    (focus)="onFocus($event)" 
                    (blur)="onBlur($event)"
                    (keyup)="checkValidity($event)" 
-                   required
+                   [required]="!formDisabled"
                    [disabled]="formDisabled">
             <span class="mdc-text-field__label">Last Name</span>
         </label>

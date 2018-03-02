@@ -44,20 +44,21 @@ export class Join implements AfterViewInit {
     onBlur(event) {
         event.target.parentNode.classList.remove('mdc-text-field--focused');
         event.target.parentNode.classList.remove('mdc-text-field-focus');
+        if (event.target.value === '') {
+            event.target.nextElementSibling.classList.remove('mdc-text-field__label--float-above');
+        }
     }
 
-    // checkValidity(event) {
-    //     if (!event.target.checkValidity()) {
-    //         // invalid
-    //         event.target.parentNode.classList.add('mdc-text-field--invalid');
-    //         if (event.target.value === '') {
-    //             event.target.nextElementSibling.classList.remove('mdc-text-field__label--float-above');
-    //         }
-    //     } else {
-    //         // valid
-    //         event.target.parentNode.classList.remove('mdc-text-field--invalid');
-    //     }
-    // }
+    checkValidity(event) {
+        event.target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
+        if (!event.target.checkValidity()) {
+            // invalid
+            event.target.parentNode.classList.add('mdc-text-field--invalid');
+        } else {
+            // valid
+            event.target.parentNode.classList.remove('mdc-text-field--invalid');
+        }
+    }
 
     submit() {}
 
