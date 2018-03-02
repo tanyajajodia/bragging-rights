@@ -40,10 +40,7 @@ export class Join implements AfterViewInit {
 
         parent.classList.add('mdc-text-field--focused');
         parent.classList.add('mdc-text-field-focus');
-
-        if (target.nextElementSibling !== null && target.nextElementSibling.nodeName === 'SPAN') {
-            target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
-        }
+        target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
     }
 
     onBlur(event) {
@@ -53,7 +50,7 @@ export class Join implements AfterViewInit {
         parent.classList.remove('mdc-text-field--focused');
         parent.classList.remove('mdc-text-field-focus');
 
-        if (target.nextElementSibling !== null && target.nextElementSibling.nodeName === 'SPAN' && target.value === '') {
+        if (target.value === '') {
             target.nextElementSibling.classList.remove('mdc-text-field__label--float-above');
         }
     }

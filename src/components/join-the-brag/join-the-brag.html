@@ -63,13 +63,13 @@
                    [disabled]="formDisabled">
             <span class="mdc-text-field__label">Last Name</span>
         </label>
-        <label class="mdc-text-field mdc-text-field--textarea mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
-                <span class="mdc-text-field__label">Reason for nomination:</span>
+        <label class="mdc-text-field mdc-text-field--textarea mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled"> 
             <textarea type="text" 
                     class="mdc-text-field__input"
                     (focus)="onFocus($event)"
                     (blur)="onBlur($event)"
                     [disabled]="formDisabled"></textarea>
+            <span class="mdc-text-field__label">Reason for Nomination</span>
         </label>
     </div>
     <button id="submit-btn" class="mdc-button mdc-button--raised disabled-btn" (click)="submit()" disabled>Submit</button>
