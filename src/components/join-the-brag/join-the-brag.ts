@@ -11,6 +11,10 @@ import { Menu } from '../menu/menu';
 export class Join implements AfterViewInit {
 
     @ViewChild(Menu) menuComponent: Menu;
+    emailRegex = '/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/';
+    becomeBtnActive = true;
+    suggestBtnActive = false;
+    formDisabled = true;
 
     constructor() {}
 
@@ -20,13 +24,15 @@ export class Join implements AfterViewInit {
     }
 
     becomeABragger() {
-        document.getElementById('become').classList.add('active');
-        document.getElementById('suggest').classList.remove('active');
+        this.becomeBtnActive = true;
+        this.formDisabled = true;
+        this.suggestBtnActive = false;
     }
 
     suggestABragger() {
-        document.getElementById('suggest').classList.add('active');
-        document.getElementById('become').classList.remove('active');
+        this.suggestBtnActive = true;
+        this.becomeBtnActive = false;
+        this.formDisabled = false;
     }
 
     onFocus(event) {
@@ -38,10 +44,20 @@ export class Join implements AfterViewInit {
     onBlur(event) {
         event.target.parentNode.classList.remove('mdc-text-field--focused');
         event.target.parentNode.classList.remove('mdc-text-field-focus');
-        if (event.target.value === '') {
-            event.target.nextElementSibling.classList.remove('mdc-text-field__label--float-above');
-        }
     }
+
+    // checkValidity(event) {
+    //     if (!event.target.checkValidity()) {
+    //         // invalid
+    //         event.target.parentNode.classList.add('mdc-text-field--invalid');
+    //         if (event.target.value === '') {
+    //             event.target.nextElementSibling.classList.remove('mdc-text-field__label--float-above');
+    //         }
+    //     } else {
+    //         // valid
+    //         event.target.parentNode.classList.remove('mdc-text-field--invalid');
+    //     }
+    // }
 
     submit() {}
 

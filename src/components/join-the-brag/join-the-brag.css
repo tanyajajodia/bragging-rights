@@ -50,6 +50,10 @@ title {
     width: 100%;
 }
 
+.disabled-form > h3 {
+    color:  var(--secondary-grey);
+}
+
 h3 {
     color: var(--primary-grey);
     font-weight: 500;
@@ -62,7 +66,7 @@ h3 {
     width: 100%;
 }
 
-.mdc-text-field:hover > span {
+.mdc-text-field:not(.mdc-text-field--invalid):not(.mdc-text-field--valid):hover > span {
     color: var(--secondary-blue);
 }
 
@@ -70,7 +74,7 @@ h3 {
     color: var(--secondary-blue);
 }
 
-.mdc-text-field__input:hover {
+.mdc-text-field:not(.mdc-text-field--invalid):hover > input {
     border-color: var(--secondary-blue);
 }
 
@@ -93,10 +97,6 @@ h3 {
     outline: none;
     border: 0;
  }
-
-.disabled-txt {
-    color:  var(--secondary-grey);
-}
 
 .disabled-btn {
     background-color: var(--secondary-grey);

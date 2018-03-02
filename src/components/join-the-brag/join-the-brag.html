@@ -2,45 +2,68 @@
   <menu></menu>
   <title></title>
   <div class="buttons-div">
-    <button id="become" class="mdc-button active-btn" (click)="becomeABragger()">Become a bragger</button>
-    <button id="suggest" class="mdc-button" (click)="suggestABragger()">Suggest a bragger</button>
+    <button class="mdc-button" [class.active-btn]="becomeBtnActive" (click)="becomeABragger()">Become a bragger</button>
+    <button class="mdc-button" [class.active-btn]="suggestBtnActive" (click)="suggestABragger()">Suggest a bragger</button>
   </div>
   <div class="form-div">
     <div class="form-info-div">
         <h3>Your information:</h3>
         <label class="mdc-text-field mdc-text-field--upgraded">
-            <input type="text" class="mdc-text-field__input" 
+            <input type="text" 
+                   class="mdc-text-field__input" 
+                   pattern="[A-Za-z]{2,}"
                    (focus)="onFocus($event)" 
                    (blur)="onBlur($event)" 
+                   (keyup)="checkValidity($event)"
                    required>
             <span class="mdc-text-field__label">First Name</span>  
         </label>
         <label class="mdc-text-field mdc-text-field--upgraded">
-            <input type="text" class="mdc-text-field__input" 
+            <input type="text" 
+                   class="mdc-text-field__input" 
+                   pattern="[A-Za-z]{2,}"
                    (focus)="onFocus($event)" 
-                   (blur)="onBlur($event)" 
+                   (blur)="onBlur($event)"
+                   (keyup)="checkValidity($event)" 
                    required>
             <span class="mdc-text-field__label">Last Name</span>
         </label>
         <label class="mdc-text-field mdc-text-field--upgraded">
-            <input type="text" class="mdc-text-field__input" 
+            <input type="email" 
+                   class="mdc-text-field__input"
+                   pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" 
                    (focus)="onFocus($event)" 
-                   (blur)="onBlur($event)" 
+                   (blur)="onBlur($event)"
+                   (keyup)="checkValidity($event)" 
                    required>
             <span class="mdc-text-field__label">Email</span>
         </label>
     </div>
-    <div class="form-info-div">
-      <h3 class="disabled-txt">Their information:</h3>
-        <label class="mdc-text-field mdc-text-field--upgraded mdc-text-field--disabled">
-            <input type="text" class="mdc-text-field__input" disabled>
+    <div class="form-info-div" [class.disabled-form]="formDisabled">
+      <h3>Their information:</h3>
+        <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
+            <input type="text" 
+                   class="mdc-text-field__input"
+                   pattern="[A-Za-z]{2,}"
+                   (focus)="onFocus($event)" 
+                   (blur)="onBlur($event)"
+                   (keyup)="checkValidity($event)" 
+                   required
+                   [disabled]="formDisabled">
             <span class="mdc-text-field__label">First Name</span>
         </label>
-        <label class="mdc-text-field mdc-text-field--upgraded mdc-text-field--disabled">
-            <input type="text" class="mdc-text-field__input" disabled>
+        <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
+            <input type="text" 
+                   class="mdc-text-field__input"
+                   pattern="[A-Za-z]{2,}"
+                   (focus)="onFocus($event)" 
+                   (blur)="onBlur($event)"
+                   (keyup)="checkValidity($event)" 
+                   required
+                   [disabled]="formDisabled">
             <span class="mdc-text-field__label">Last Name</span>
         </label>
     </div>
-    <button class="mdc-button mdc-button--raised disabled-btn" (click)="submit()" disabled>Submit</button>
+    <button id="submit-btn" class="mdc-button mdc-button--raised disabled-btn" (click)="submit()" disabled>Submit</button>
   </div>
 </div>
