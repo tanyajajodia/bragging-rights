@@ -82,6 +82,14 @@ h3 {
     border-color: var(--secondary-blue);
 }
 
+.mdc-text-field--textarea:hover {
+    border-color: var(--secondary-blue);
+}
+
+.mdc-text-field--textarea.mdc-text-field--focused {
+    border-color: var(--secondary-blue);
+}
+
 .mdc-button--raised {
     border-width: 0;
     margin: 10px;
