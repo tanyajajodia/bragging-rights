@@ -14,6 +14,7 @@ export class Join implements AfterViewInit {
     becomeBtnActive = true;
     suggestBtnActive = false;
     formDisabled = true;
+    submitDisabled = true;
 
     constructor() {}
 
@@ -66,6 +67,7 @@ export class Join implements AfterViewInit {
         }
     }
 
-    submit() {}
-
+    submit() {
+        console.log('submit!');
+    }
 }

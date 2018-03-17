@@ -37,7 +37,7 @@ title {
     background: var(--secondary-blue);
  }
 
-.form-div {
+form {
     display: flex;
     flex-direction: column;
     margin: 20px;
