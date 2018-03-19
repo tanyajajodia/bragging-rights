@@ -71,12 +71,8 @@ export class Join implements AfterViewInit {
         }
     }
 
-    submit() {
-        console.log('submit!');
-    }
-
     isSubmitDisabled() {
-        let formValid = document.getElementById('join-form').checkValidity();
+        const formValid = (<HTMLFormElement>document.getElementById('join-form')).checkValidity();
         if (formValid) {
             this.submitDisabled = false;
         } else {
