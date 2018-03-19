@@ -68,6 +68,13 @@ title {
 
  /* responsive design */
 
+ @media (min-width: 944px) {
+    .bragger-div {
+        justify-content: flex-start;
+        width: 879px;
+    }
+ }
+
  @media (min-width: 1383px) {
      .bragger-div {
          justify-content: flex-start;
