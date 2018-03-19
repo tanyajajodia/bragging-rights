@@ -27,12 +27,14 @@ export class Join implements AfterViewInit {
         this.becomeBtnActive = true;
         this.formDisabled = true;
         this.suggestBtnActive = false;
+        this.isSubmitDisabled();
     }
 
     suggestABragger() {
         this.suggestBtnActive = true;
         this.becomeBtnActive = false;
         this.formDisabled = false;
+        this.isSubmitDisabled();
     }
 
     onFocus(event) {
@@ -61,13 +63,24 @@ export class Join implements AfterViewInit {
         if (!event.target.checkValidity()) {
             // invalid
             event.target.parentNode.classList.add('mdc-text-field--invalid');
+            this.isSubmitDisabled();
         } else {
             // valid
             event.target.parentNode.classList.remove('mdc-text-field--invalid');
+            this.isSubmitDisabled();
         }
     }
 
     submit() {
         console.log('submit!');
+    }
+
+    isSubmitDisabled() {
+        let formValid = document.getElementById('join-form').checkValidity();
+        if (formValid) {
+            this.submitDisabled = false;
+        } else {
+            this.submitDisabled = true;
+        }
     }
 }
