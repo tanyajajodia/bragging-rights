@@ -27,14 +27,12 @@ export class Join implements AfterViewInit {
         this.becomeBtnActive = true;
         this.formDisabled = true;
         this.suggestBtnActive = false;
-        this.isSubmitDisabled();
     }
 
     suggestABragger() {
         this.suggestBtnActive = true;
         this.becomeBtnActive = false;
         this.formDisabled = false;
-        this.isSubmitDisabled();
     }
 
     onFocus(event) {
@@ -73,10 +71,6 @@ export class Join implements AfterViewInit {
 
     isSubmitDisabled() {
         const formValid = (<HTMLFormElement>document.getElementById('join-form')).checkValidity();
-        if (formValid) {
-            this.submitDisabled = false;
-        } else {
-            this.submitDisabled = true;
-        }
+        this.submitDisabled = !formValid;
     }
 }
