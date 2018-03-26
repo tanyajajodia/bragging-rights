@@ -5,11 +5,12 @@
     <button class="mdc-button" [class.active-btn]="becomeBtnActive" (click)="becomeABragger()">Become a bragger</button>
     <button class="mdc-button" [class.active-btn]="suggestBtnActive" (click)="suggestABragger()">Suggest a bragger</button>
   </div>
-  <form id="join-form">
+  <form id="join-form" action="https://formspree.io/amy.dalton@ge.com" method="POST">
     <div class="form-info-div">
       <h3>Your information:</h3>
       <label class="mdc-text-field mdc-text-field--upgraded">
-        <input type="text" 
+        <input type="text"
+               name="firstName" 
                class="mdc-text-field__input" 
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -20,6 +21,7 @@
       </label>
       <label class="mdc-text-field mdc-text-field--upgraded">
         <input type="text" 
+               name="lastName"
                class="mdc-text-field__input" 
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -30,6 +32,7 @@
       </label>
       <label class="mdc-text-field mdc-text-field--upgraded">
         <input type="email"
+               name="email"
                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
                class="mdc-text-field__input"
                (focus)="onFocus($event)" 
@@ -42,7 +45,8 @@
     <div class="form-info-div" [class.disabled-form]="formDisabled">
       <h3>Their information:</h3>
       <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
-        <input type="text" 
+        <input type="text"
+               name="firstNameSuggested" 
                class="mdc-text-field__input"
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -53,7 +57,8 @@
         <span class="mdc-text-field__label">First Name</span>
       </label>
       <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
-        <input type="text" 
+        <input type="text"
+               name="lastNameSuggested"
                class="mdc-text-field__input"
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -64,7 +69,8 @@
         <span class="mdc-text-field__label">Last Name</span>
       </label>
       <label class="mdc-text-field mdc-text-field--textarea mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled"> 
-        <textarea type="text" 
+        <textarea type="text"
+                  name="reasonForNomination" 
                   class="mdc-text-field__input"
                   (focus)="onFocus($event)"
                   (blur)="onBlur($event)"

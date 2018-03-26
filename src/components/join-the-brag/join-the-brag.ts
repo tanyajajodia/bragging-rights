@@ -14,7 +14,7 @@ export class Join implements AfterViewInit {
     becomeBtnActive = true;
     suggestBtnActive = false;
     formDisabled = true;
-    submitDisabled = true;
+    // submitDisabled = true;
 
     constructor() {}
 
@@ -61,16 +61,16 @@ export class Join implements AfterViewInit {
         if (!event.target.checkValidity()) {
             // invalid
             event.target.parentNode.classList.add('mdc-text-field--invalid');
-            this.isSubmitDisabled();
+            // this.isSubmitDisabled();
         } else {
             // valid
             event.target.parentNode.classList.remove('mdc-text-field--invalid');
-            this.isSubmitDisabled();
+            // this.isSubmitDisabled();
         }
     }
 
-    isSubmitDisabled() {
-        const formValid = (<HTMLFormElement>document.getElementById('join-form')).checkValidity();
-        this.submitDisabled = !formValid;
-    }
+    // isSubmitDisabled() {
+    //     const formValid = (<HTMLFormElement>document.getElementById('join-form')).checkValidity();
+    //     this.submitDisabled = !formValid;
+    // }
 }
