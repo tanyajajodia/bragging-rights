@@ -1,6 +1,8 @@
 import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Menu } from '../menu/menu';
+import * as $ from 'jquery';
 
 
 @Component({
@@ -17,14 +19,14 @@ export class Join implements AfterViewInit {
     formDisabled = true;
     joinForm: FormGroup;
 
-    constructor(private formBuilder: FormBuilder) {
+    constructor(private formBuilder: FormBuilder, private router: Router) {
         this.joinForm = formBuilder.group({
-            firstName: '',
-            lastName: '',
-            email: '',
-            firstNameSuggested: '',
-            lastNameSuggested: '',
-            reasonForNomination: ''
+            firstName: null,
+            lastName: null,
+            email: null,
+            firstNameSuggested: null,
+            lastNameSuggested: null,
+            reasonForNomination: null
         });
     }
 
@@ -80,5 +82,32 @@ export class Join implements AfterViewInit {
             // valid
             event.target.parentNode.classList.remove('mdc-text-field--invalid');
         }
+    }
+
+    onSubmit() {
+        let message = 'Thanks for your interest! Amy Dalton will be in touch with you soon.'
+        const formData = {
+            firstName: this.joinForm.get('firstName').value,
+            lastName: this.joinForm.get('lastName').value,
+            email: this.joinForm.get('email').value,
+            firstNameSuggested: null,
+            lastNameSuggested: null,
+            reasonForNomination: null
+        };
+
+        if (this.suggestBtnActive) {
+            formData.firstNameSuggested = this.joinForm.get('firstNameSuggested').value;
+            formData.lastNameSuggested = this.joinForm.get('lastNameSuggested').value;
+            formData.reasonForNomination = this.joinForm.get('reasonForNomination').value;
+            message = 'Thanks for your suggestion! Amy Dalton will reach out to the potential bragger.';
+        }
+
+        $.ajax({
+            url: 'https://formspree.io/aambaashae@gmail.com',
+            method: 'POST',
+            data: formData,
+            dataType: 'json'
+        });
+        alert(message);
     }
 }
