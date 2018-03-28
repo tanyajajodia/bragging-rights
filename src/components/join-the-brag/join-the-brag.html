@@ -5,12 +5,14 @@
     <button class="mdc-button" [class.active-btn]="becomeBtnActive" (click)="becomeABragger()">Become a bragger</button>
     <button class="mdc-button" [class.active-btn]="suggestBtnActive" (click)="suggestABragger()">Suggest a bragger</button>
   </div>
-  <form id="join-form" action="https://formspree.io/amy.dalton@ge.com" method="POST">
+  <form [formGroup]="joinForm" action="https://formspree.io/ambyrshae.jarrell@gmail.com" method="POST">
+    {{joinForm.status}}
+    {{joinForm.invalid}}
     <div class="form-info-div">
       <h3>Your information:</h3>
       <label class="mdc-text-field mdc-text-field--upgraded">
         <input type="text"
-               name="firstName" 
+               formControlName="firstName" 
                class="mdc-text-field__input" 
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -21,7 +23,7 @@
       </label>
       <label class="mdc-text-field mdc-text-field--upgraded">
         <input type="text" 
-               name="lastName"
+               formControlName="lastName"
                class="mdc-text-field__input" 
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -32,7 +34,7 @@
       </label>
       <label class="mdc-text-field mdc-text-field--upgraded">
         <input type="email"
-               name="email"
+               formControlName="email"
                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
                class="mdc-text-field__input"
                (focus)="onFocus($event)" 
@@ -46,7 +48,7 @@
       <h3>Their information:</h3>
       <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
         <input type="text"
-               name="firstNameSuggested" 
+               formControlName="firstNameSuggested" 
                class="mdc-text-field__input"
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -58,7 +60,7 @@
       </label>
       <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
         <input type="text"
-               name="lastNameSuggested"
+               formControlName="lastNameSuggested"
                class="mdc-text-field__input"
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -70,7 +72,7 @@
       </label>
       <label class="mdc-text-field mdc-text-field--textarea mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled"> 
         <textarea type="text"
-                  name="reasonForNomination" 
+                  formControlName="reasonForNomination" 
                   class="mdc-text-field__input"
                   (focus)="onFocus($event)"
                   (blur)="onBlur($event)"
@@ -78,6 +80,6 @@
         <span class="mdc-text-field__label">Reason for Nomination</span>
       </label>
     </div>
-    <input type="submit" class="mdc-button mdc-button--raised">
+    <input type="submit" class="mdc-button mdc-button--raised" [class.disabled-btn]="joinForm.invalid" [disabled]="joinForm.invalid">
   </form>
 </div>

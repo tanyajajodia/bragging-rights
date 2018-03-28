@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, ViewChild } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { Menu } from '../menu/menu';
 
 
@@ -14,9 +15,18 @@ export class Join implements AfterViewInit {
     becomeBtnActive = true;
     suggestBtnActive = false;
     formDisabled = true;
-    // submitDisabled = true;
+    joinForm: FormGroup;
 
-    constructor() {}
+    constructor(private formBuilder: FormBuilder) {
+        this.joinForm = formBuilder.group({
+            firstName: '',
+            lastName: '',
+            email: '',
+            firstNameSuggested: '',
+            lastNameSuggested: '',
+            reasonForNomination: ''
+        });
+    }
 
     // highlights menu according to what page you are currently viewing
     ngAfterViewInit() {
@@ -61,16 +71,9 @@ export class Join implements AfterViewInit {
         if (!event.target.checkValidity()) {
             // invalid
             event.target.parentNode.classList.add('mdc-text-field--invalid');
-            // this.isSubmitDisabled();
         } else {
             // valid
             event.target.parentNode.classList.remove('mdc-text-field--invalid');
-            // this.isSubmitDisabled();
         }
     }
-
-    // isSubmitDisabled() {
-    //     const formValid = (<HTMLFormElement>document.getElementById('join-form')).checkValidity();
-    //     this.submitDisabled = !formValid;
-    // }
 }

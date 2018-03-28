@@ -12,6 +12,7 @@ import { Sessions } from './../components/sessions/sessions';
 import { Join } from './../components/join-the-brag/join-the-brag';
 import { RouterModule, Routes } from '@angular/router';
 import { BraggerService } from './../services/bragger.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 // sets the routes within the app
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    ChartsModule
+    ChartsModule,
+    ReactiveFormsModule
   ],
   providers: [ BraggerService ],
   bootstrap: [ AppComponent ]
