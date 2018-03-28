@@ -33,18 +33,21 @@ export class Join implements AfterViewInit {
         this.menuComponent.isActive('join');
     }
 
+    // disables part of the form and adds styling to buttons
     becomeABragger() {
         this.becomeBtnActive = true;
         this.formDisabled = true;
         this.suggestBtnActive = false;
     }
 
+    // enables part of the form and adds styling to buttons
     suggestABragger() {
         this.suggestBtnActive = true;
         this.becomeBtnActive = false;
         this.formDisabled = false;
     }
 
+    // styling: sets classes when input focused
     onFocus(event) {
         const target = event.target;
         const parent = target.parentNode;
@@ -54,6 +57,7 @@ export class Join implements AfterViewInit {
         target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
     }
 
+    // styling: sets classes when input blurred
     onBlur(event) {
         const target = event.target;
         const parent = target.parentNode;
@@ -66,6 +70,7 @@ export class Join implements AfterViewInit {
         }
     }
 
+    // styling: sets appropriate classes to input fields according to validity
     checkValidity(event) {
         event.target.nextElementSibling.classList.add('mdc-text-field__label--float-above');
         if (!event.target.checkValidity()) {

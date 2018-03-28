@@ -6,8 +6,6 @@
     <button class="mdc-button" [class.active-btn]="suggestBtnActive" (click)="suggestABragger()">Suggest a bragger</button>
   </div>
   <form [formGroup]="joinForm" action="https://formspree.io/ambyrshae.jarrell@gmail.com" method="POST">
-    {{joinForm.status}}
-    {{joinForm.invalid}}
     <div class="form-info-div">
       <h3>Your information:</h3>
       <label class="mdc-text-field mdc-text-field--upgraded">
