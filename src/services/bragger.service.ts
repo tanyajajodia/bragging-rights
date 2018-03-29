@@ -11,11 +11,11 @@ export class BraggerService {
 
     constructor() {}
 
-    getBraggerArray() {
+    getBraggerArray(): Array<Bragger> {
         return this.braggers;
     }
 
-    getSortedByNameBraggerArray() {
+    getSortedByNameBraggerArray(): Array<Bragger> {
         this.braggers.sort(( bragger1, bragger2 ) => {
 
             let name1 = bragger1.name.toUpperCase();
@@ -33,5 +33,15 @@ export class BraggerService {
         });
 
         return this.braggers;
+    }
+
+    preloadImages(): void {
+        const imgUrl = './assets/img/';
+        for (let bragger of this.braggers) {
+            let img = new Image();
+            if (bragger.imgName !== null) {
+                img.src = imgUrl + bragger.imgName;
+            }
+        }
     }
 }

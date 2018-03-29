@@ -12,16 +12,6 @@ export class Menu {
 
     constructor( private router: Router ) {}
 
-    // navigate to home page
-    goHome() {
-        this.router.navigateByUrl('home');
-    }
-
-    // navigate to sessions page
-    goToSessions() {
-        this.router.navigateByUrl('sessions');
-    }
-
     // navigate to braggers page
     goToBraggers() {
         this.router.navigateByUrl('braggers');
@@ -31,7 +21,6 @@ export class Menu {
     goToJoin() {
         this.router.navigateByUrl('join-the-brag');
     }
-
 
     isActive( id: string ) {
         document.getElementById(id).classList.toggle('active');

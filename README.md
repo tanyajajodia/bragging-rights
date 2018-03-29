@@ -1,11 +1,6 @@
 # BraggingRights
 
-This web app was born out of my incessant boredom of defects and never changing techstack. 
-
-It is currently being used for the Bragging Rights sessions held by the Women's Network at my current job. 
-
-## Description
-Everyone has a story! Bragging Rights is an opportunity to learn more about your coworkers as they share the highs and lows of their social/professional journey lines. These sessions were initially held to empower women to speak up about their achievements and the obstacles they faced in pursuit of their goals.
+Everyone has a story! Bragging Rights is an opportunity to learn more about your coworkers as they share the highs and lows of their social/professional journey lines. These sessions were initially held to empower women to speak up about their achievements and the obstacles they faced in pursuit of their goals. It is currently being used for the Bragging Rights sessions held by the Women's Network at my current job.
 
 ## Project information
 
@@ -34,3 +29,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##### Excursus
+<sub><sup>This web app was born out of my incessant boredom of defects and never changing techstack. </sub></sup>
