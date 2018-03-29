@@ -85,7 +85,7 @@ export class Join implements AfterViewInit {
     }
 
     onSubmit() {
-        let message = 'Thanks for your interest! Amy Dalton will be in touch with you soon.'
+        let message = 'Thanks for your interest! Amy Dalton will be in touch with you soon.';
         const formData = {
             firstName: this.joinForm.get('firstName').value,
             lastName: this.joinForm.get('lastName').value,
