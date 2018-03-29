@@ -5,16 +5,16 @@
     flex-wrap: wrap;
 }
 .mdc-button {
-    color: #00B5E2;
+    color: var(--secondary-blue);
     font-size: 1.125em;
     font-weight: lighter;
 }
 
 .active {
     color: white;
-    background: #00B5E2;
+    background: var(--secondary-blue);
 }
 
 .disabled {
-    color:  #B1B3B3;
+    color:  var(--secondary-grey);
 }

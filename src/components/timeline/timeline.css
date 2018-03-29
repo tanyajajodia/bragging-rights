@@ -13,7 +13,7 @@ menu {
     flex-direction: column;
     justify-content: space-between;
     padding: 30px 0;
-    color: #63666A;
+    color: var(--primary-grey);
     margin-left: 19px;
 }
 

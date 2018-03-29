@@ -1,0 +1,83 @@
+<div class="join-the-brag-page">
+  <menu></menu>
+  <title></title>
+  <div class="buttons-div">
+    <button class="mdc-button" [class.active-btn]="becomeBtnActive" (click)="becomeABragger()">Become a bragger</button>
+    <button class="mdc-button" [class.active-btn]="suggestBtnActive" (click)="suggestABragger()">Suggest a bragger</button>
+  </div>
+  <form [formGroup]="joinForm" (ngSubmit)="onSubmit()" method="POST">
+    <div class="form-info-div">
+      <h3>Your information:</h3>
+      <label class="mdc-text-field mdc-text-field--upgraded">
+        <input type="text"
+               formControlName="firstName" 
+               class="mdc-text-field__input" 
+               pattern="[A-Za-z]{2,}"
+               (focus)="onFocus($event)" 
+               (blur)="onBlur($event)" 
+               (change)="checkValidity($event)"
+               required>
+        <span class="mdc-text-field__label">First Name</span>  
+      </label>
+      <label class="mdc-text-field mdc-text-field--upgraded">
+        <input type="text" 
+               formControlName="lastName"
+               class="mdc-text-field__input" 
+               pattern="[A-Za-z]{2,}"
+               (focus)="onFocus($event)" 
+               (blur)="onBlur($event)"
+               (change)="checkValidity($event)" 
+               required>
+        <span class="mdc-text-field__label">Last Name</span>
+      </label>
+      <label class="mdc-text-field mdc-text-field--upgraded">
+        <input type="email"
+               formControlName="email"
+               pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
+               class="mdc-text-field__input"
+               (focus)="onFocus($event)" 
+               (blur)="onBlur($event)"
+               (change)="checkValidity($event)" 
+               required>
+        <span class="mdc-text-field__label">Email</span>
+      </label>
+    </div>
+    <div class="form-info-div" [class.disabled-form]="formDisabled">
+      <h3>Their information:</h3>
+      <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
+        <input type="text"
+               formControlName="firstNameSuggested" 
+               class="mdc-text-field__input"
+               pattern="[A-Za-z]{2,}"
+               (focus)="onFocus($event)" 
+               (blur)="onBlur($event)"
+               (change)="checkValidity($event)" 
+               [required]="!formDisabled"
+               [disabled]="formDisabled">
+        <span class="mdc-text-field__label">First Name</span>
+      </label>
+      <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
+        <input type="text"
+               formControlName="lastNameSuggested"
+               class="mdc-text-field__input"
+               pattern="[A-Za-z]{2,}"
+               (focus)="onFocus($event)" 
+               (blur)="onBlur($event)"
+               (change)="checkValidity($event)" 
+               [required]="!formDisabled"
+               [disabled]="formDisabled">
+        <span class="mdc-text-field__label">Last Name</span>
+      </label>
+      <label class="mdc-text-field mdc-text-field--textarea mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled"> 
+        <textarea type="text"
+                  formControlName="reasonForNomination" 
+                  class="mdc-text-field__input"
+                  (focus)="onFocus($event)"
+                  (blur)="onBlur($event)"
+                  [disabled]="formDisabled"></textarea>
+        <span class="mdc-text-field__label">Reason for Nomination</span>
+      </label>
+    </div>
+    <input type="submit" class="mdc-button mdc-button--raised" [class.disabled-btn]="joinForm.invalid" [disabled]="joinForm.invalid">
+  </form>
+</div>

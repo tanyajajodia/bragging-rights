@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/@material/button/dist/mdc.button.css";
+@import "../node_modules/@material/form-field/dist/mdc.form-field.css";
 @import "../node_modules/@material/textfield/dist/mdc.textfield.css";
 @import "../node_modules/font-awesome/css/font-awesome.css";
 
 body {
     font-family: sans-serif;
+    --primary-blue: #005EB8;
+    --secondary-blue: #00B5E2;
+    --primary-grey: #63666A;
+    --secondary-grey: #B1B3B3;
 }
