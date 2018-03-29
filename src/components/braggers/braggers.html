@@ -3,8 +3,9 @@
     <title></title>    
     <div class="bragger-div">
         <button class="mdc-button--raised" *ngFor="let bragger of braggers" (click)="goToTimeline(bragger)">
-            <div class="img-div">
-              <img src="./assets/img/{{bragger.imgName}}">
+            <div class="img-div" [ngSwitch]="bragger.imgName == null">
+              <img *ngSwitchCase="true" src="./assets/img/default.png">
+              <img *ngSwitchCase="false" src="./assets/img/{{bragger.imgName}}">
             </div>  
             <div class="bragger-info-div">
               <p class="bragger-name">{{bragger.name}}</p>
