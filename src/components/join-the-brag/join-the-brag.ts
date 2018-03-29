@@ -109,5 +109,6 @@ export class Join implements AfterViewInit {
             dataType: 'json'
         });
         alert(message);
+        this.router.navigateByUrl('braggers');
     }
 }
