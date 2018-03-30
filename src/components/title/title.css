@@ -26,6 +26,7 @@ h3 {
  and (-webkit-min-device-pixel-ratio: 2) {
     h1 {
         font-size: 34px;
+        margin-top: 0;
     }
     h3 {
         margin-top: 5px;
