@@ -18,6 +18,8 @@ body {
 
  @media only screen 
  and (min-device-width: 320px)
+ and (max-device-width: 568px)
+ and (orientation: portrait)
  and (-webkit-min-device-pixel-ratio: 2) {
     body {
         width: 304px;
@@ -28,19 +30,23 @@ body {
 
  @media only screen 
  and (min-device-width: 375px)
+ and (max-device-width: 667px)
+ and (orientation: portrait) 
  and (-webkit-min-device-pixel-ratio: 2) { 
     body {
         width: 303px;
     }
  }
 
-/* ----------- iPhone 6 Plus ----------- */
+ /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
  /* Portrait and Landscape */
  @media only screen 
  and (min-device-width: 414px) 
- and (-webkit-min-device-pixel-ratio: 2) {
+ and (max-device-width: 736px) 
+ and (orientation: portrait)
+ and (-webkit-min-device-pixel-ratio: 3) { 
     body {
         width: 335px;
     }
- }
+}

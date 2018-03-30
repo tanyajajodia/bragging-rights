@@ -62,6 +62,10 @@ title {
     width: 185px;
  }
 
+ .bragger-info-div p {
+    margin-bottom: 0;
+ }
+
  .bragger-name {
      font-weight: 500;
  }
@@ -80,6 +84,11 @@ title {
     }
     .mdc-button--raised {
         width: 100%;
+        padding: 0;
+    }
+    .img-div {
+        width: 255px;
+        margin: 10px 5px;
     }
  }
 
