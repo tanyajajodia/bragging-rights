@@ -21,7 +21,7 @@ title {
 
  .mdc-button {
     border-width: 0;
-    margin: 10px;
+    margin-bottom: 10px;
     color: var(--secondary-blue);
     font-size: 18px;
     font-weight: lighter;
@@ -109,3 +109,36 @@ h3 {
 .disabled-btn {
     background-color: var(--secondary-grey);
 }
+
+/* responsive design */
+
+ /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+ @media only screen 
+ and (min-device-width: 320px)
+ and (max-device-width: 568px)
+ and (orientation: portrait)
+ and (-webkit-min-device-pixel-ratio: 2) {
+    .buttons-div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        width: 100%;
+        margin-top: 0;
+    }
+ }
+
+ @media only screen 
+ and (min-device-width: 320px)
+ and (max-device-width: 568px)
+ and (orientation: landscape)
+ and (-webkit-min-device-pixel-ratio: 2) {
+    .buttons-div {
+        margin-top: 20px;
+    }
+    form {
+        margin-top: 5px;
+    }
+ }
