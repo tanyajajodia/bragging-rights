@@ -17,6 +17,7 @@ title {
     font-size: 1.125em;
     font-weight: lighter;
     color: var(--primary-grey);
+    margin-top: 20px;
  }
 
  .mdc-button {
@@ -132,13 +133,22 @@ h3 {
 
  @media only screen 
  and (min-device-width: 320px)
- and (max-device-width: 568px)
+ and (max-device-width: 667px)
  and (orientation: landscape)
  and (-webkit-min-device-pixel-ratio: 2) {
-    .buttons-div {
-        margin-top: 20px;
-    }
     form {
         margin-top: 5px;
     }
  }
+
+ /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+ @media only screen 
+ and (min-device-width: 414px) 
+ and (max-device-width: 736px) 
+ and (orientation: landscape)
+ and (-webkit-min-device-pixel-ratio: 3) { 
+    form {
+        margin-top: 5px;
+    }
+}
