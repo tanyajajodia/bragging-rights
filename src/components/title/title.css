@@ -23,7 +23,6 @@ h3 {
 
  @media only screen 
  and (min-device-width: 320px)
- and (max-device-width: 568px)
  and (orientation: portrait)
  and (-webkit-min-device-pixel-ratio: 2) {
     h1 {
@@ -36,34 +35,16 @@ h3 {
     }
  }
 
- @media only screen 
- and (min-device-width: 320px)
- and (max-device-width: 568px)
- and (orientation: landscape)
- and (-webkit-min-device-pixel-ratio: 2) {
-    h1 {
-        font-size: 42px;
-        margin-top: 0;
-    }
-    h3 {
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
- }
-
-
  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
  @media only screen 
  and (min-device-width: 375px)
- and (max-device-width: 667px)
  and (orientation: portrait)
  and (-webkit-min-device-pixel-ratio: 2) { 
     h1 {
         font-size: 34px;
     }
     h3 {
-        font-size: 16px;
         margin-top: 5px;
     }
  }
@@ -71,15 +52,13 @@ h3 {
  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
  @media only screen 
- and (min-device-width: 414px) 
- and (max-device-width: 736px) 
+ and (min-device-width: 414px)
  and (orientation: portrait)
  and (-webkit-min-device-pixel-ratio: 2) {
     h1 {
-        font-size: 38px;
+        font-size: 40px;
     }
     h3 {
-        font-size: 18px;
         margin-top: 5px;
     }
  }

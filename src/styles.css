@@ -46,6 +46,6 @@ body {
  and (orientation: portrait)
  and (-webkit-min-device-pixel-ratio: 3) { 
     body {
-        
+        width: 397px;
     }
 }
