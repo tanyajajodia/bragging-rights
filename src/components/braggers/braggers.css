@@ -98,6 +98,19 @@ title {
     }
  }
 
+ /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+ @media only screen 
+ and (min-device-width: 414px) 
+ and (max-device-width: 736px) 
+ and (orientation: portrait)
+ and (-webkit-min-device-pixel-ratio: 3) { 
+    .img-div {
+        width: 185px;
+        margin: 10px;
+    }
+}
+
  @media (min-width: 944px) {
     .bragger-div {
         justify-content: flex-start;
