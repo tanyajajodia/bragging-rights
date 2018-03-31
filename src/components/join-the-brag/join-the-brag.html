@@ -42,7 +42,7 @@
         <span class="mdc-text-field__label">Email</span>
       </label>
     </div>
-    <div class="form-info-div" [class.disabled-form]="formDisabled">
+    <div class="form-info-div" [hidden]="formDisabled">
       <h3>Their information:</h3>
       <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
         <input type="text"
