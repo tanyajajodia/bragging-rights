@@ -120,14 +120,21 @@ h3 {
  and (max-device-width: 568px)
  and (orientation: portrait)
  and (-webkit-min-device-pixel-ratio: 2) {
+     .join-the-brag-page {
+         width: 100%;
+     }
     .buttons-div {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
     }
+    .mdc-button {
+        font-size: 14px;
+    }
     form {
         width: 100%;
         margin-top: 0;
+        font-size: 13px;
     }
  }
 

@@ -26,10 +26,11 @@ h3 {
  and (orientation: portrait)
  and (-webkit-min-device-pixel-ratio: 2) {
     h1 {
-        font-size: 34px;
+        font-size: 26px;
         margin-top: 0;
     }
     h3 {
+        font-size: 16px;
         margin-top: 5px;
         margin-bottom: 0;
     }

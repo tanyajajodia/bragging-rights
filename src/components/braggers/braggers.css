@@ -79,6 +79,9 @@ title {
  and (max-device-width: 568px)
  and (orientation: portrait)
  and (-webkit-min-device-pixel-ratio: 2) {
+    .braggers-page {
+        width: 100%
+    }
     .bragger-div {
         width: 100%;
     }
@@ -89,6 +92,9 @@ title {
     .img-div {
         width: 255px;
         margin: 10px 5px;
+    }
+    .bragger-info-div {
+        font-size: 16px;
     }
  }
 
