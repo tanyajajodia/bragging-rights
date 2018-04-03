@@ -103,7 +103,7 @@ export class Join implements AfterViewInit {
         }
 
         $.ajax({
-            url: 'https://formspree.io/aambaashae@gmail.com',
+            url: 'https://formspree.io/amy.dalton@ge.com',
             method: 'POST',
             data: formData,
             dataType: 'json'
