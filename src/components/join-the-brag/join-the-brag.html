@@ -80,4 +80,20 @@
     </div>
     <input type="submit" class="mdc-button mdc-button--raised" [class.disabled-btn]="joinForm.invalid" [disabled]="joinForm.invalid">
   </form>
+  <aside id="email-confirmation"
+         class="mdc-dialog"
+         role="alertdialog"
+         aria-labelledby="email-confirmation-label"
+         aria-describedby="email-confirmation-description">
+    <div class="mdc-dialog__surface">
+      <header class="mdc-dialog__header">
+        <h2 id="email-confirmation-label" class="mdc-dialog__header__title"></h2>
+      </header>
+      <section id="email-confirmation-description" class="mdc-dialog__body"></section>
+      <footer class="mdc-dialog__footer">
+        <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">OK</button>
+      </footer>
+    </div>
+    <div class="mdc-dialog__backdrop"></div>
+  </aside>
 </div>

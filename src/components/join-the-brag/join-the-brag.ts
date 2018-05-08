@@ -2,6 +2,7 @@ import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Menu } from '../menu/menu';
+import { MDCDialog } from '@material/dialog';
 import * as $ from 'jquery';
 
 
@@ -18,6 +19,7 @@ export class Join implements AfterViewInit {
     suggestBtnActive = false;
     formDisabled = true;
     joinForm: FormGroup;
+    dialog: MDCDialog;
 
     constructor(private formBuilder: FormBuilder, private router: Router) {
         this.joinForm = formBuilder.group({
@@ -33,6 +35,7 @@ export class Join implements AfterViewInit {
     // highlights menu according to what page you are currently viewing
     ngAfterViewInit() {
         this.menuComponent.isActive('join');
+        this.dialog = new MDCDialog(document.querySelector('#email-confirmation'));
     }
 
     // disables part of the form and adds styling to buttons
@@ -85,7 +88,12 @@ export class Join implements AfterViewInit {
     }
 
     onSubmit() {
-        let message = 'Thanks for your interest! Amy Dalton will be in touch with you soon.';
+
+        const dialog = this.dialog;
+        const router = this.router;
+        let header = 'Thanks for your interest in becoming a bragger!';
+        let message = 'Amy Dalton will be in touch with you soon.';
+
         const formData = {
             firstName: this.joinForm.get('firstName').value,
             lastName: this.joinForm.get('lastName').value,
@@ -99,16 +107,24 @@ export class Join implements AfterViewInit {
             formData.firstNameSuggested = this.joinForm.get('firstNameSuggested').value;
             formData.lastNameSuggested = this.joinForm.get('lastNameSuggested').value;
             formData.reasonForNomination = this.joinForm.get('reasonForNomination').value;
-            message = 'Thanks for your suggestion! Amy Dalton will reach out to the potential bragger.';
+            header = 'Thanks for your suggestion!';
+            message = 'Amy Dalton will reach out to the potential bragger.';
         }
 
         $.ajax({
-            url: 'https://formspree.io/amy.dalton@ge.com',
+            url: 'https://formspree.io/ambyrshae.jarrell@gmail.com',
             method: 'POST',
             data: formData,
             dataType: 'json'
         });
-        alert(message);
-        this.router.navigateByUrl('braggers');
+
+        // show email confirmation then route back to Braggers when OK selected
+        document.querySelector('#email-confirmation-label').innerHTML = header;
+        document.querySelector('#email-confirmation-description').innerHTML = message;
+        dialog.show();
+        dialog.listen('MDCDialog:accept', function() {
+            dialog.getDefaultFoundation().adapter_.removeBodyClass('mdc-dialog-scroll-lock');
+            router.navigateByUrl('braggers');
+        });
     }
 }
