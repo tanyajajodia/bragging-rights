@@ -315,6 +315,34 @@
             "bragValue": [3, 3, 2, 2, 4, -3, 4, 5, 5, 5, 4, 4, -4, -2, 2, -1, 3, 5, -2, 4, -5, 4, 0, 5, -4, 3, -4, 3, 5, 4, 4, -1, 5, 4, 4, 4, -4, 3, 4, 5],
             "imgName": "PadmajaUstili.JPG",
             "sessionDate": "April 2018"
+        },
+        {
+            "name": "Sabrina Dowling",
+            "jobTitle": "Sr. Technical Product Manager",
+            "bu": "GE Digital",
+            "careerLength": "8",
+            "brag": [
+                     "2010: Graduated from UNC",
+                     "2010: First job offer",
+                     "2011: Job offer at Company That Shall Not Be Named & moved to New Orleans",
+                     "2011: Quit job at Company That Shall Not Be Named",
+                     "2011: Started job as Associate Project Manager at Peter Mayer",
+                     "2012: Passed over for promotion",
+                     "2013: Got dumped",
+                     "2013: Horizontal job change",
+                     "2014: Met future husband",
+                     "2014: New job as Media Operations Manager at CPXi",
+                     "2015: Company restructuring aka laid off",
+                     "2015: Started job as AdOps manager on Proof at Lucid",
+                     "2016: Job Offer from GE as Technical Business Analyst",
+                     "2017: Got engaged",
+                     "2017: Insecurity in role at GE",
+                     "2017: Promoted to Sr Technical Product Manager",
+                     "2018: Got married"
+            ],
+            "bragValue": [1, 1, 4, -4, 4, -3, -4, 1, 4, 3, 3, 4, 3, 5, 2, 4, 5],
+            "imgName": "SabrinaDowling.JPG",
+            "sessionDate": "May 2018"
         }
     ]
 }
