@@ -123,7 +123,7 @@ export class Join implements AfterViewInit {
         document.querySelector('#email-confirmation-description').innerHTML = message;
         dialog.show();
         dialog.listen('MDCDialog:accept', function() {
-            dialog.getDefaultFoundation().adapter_.removeBodyClass('mdc-dialog-scroll-lock');
+            (dialog.getDefaultFoundation() as any).adapter_.removeBodyClass('mdc-dialog-scroll-lock');
             router.navigateByUrl('braggers');
         });
     }
