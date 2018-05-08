@@ -36,6 +36,9 @@ export class Join implements AfterViewInit {
     ngAfterViewInit() {
         this.menuComponent.isActive('join');
         this.dialog = new MDCDialog(document.querySelector('#email-confirmation'));
+        alert('Join the Brag is currently experiencing issues sending out emails. '
+                + 'Please contact Amy Dalton directly at amy.dalton@ge.com if you are interested in becoming or suggesting a bragger. '
+                + 'Thank you!');
     }
 
     // disables part of the form and adds styling to buttons
