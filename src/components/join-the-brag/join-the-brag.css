@@ -51,10 +51,6 @@ form {
     width: 100%;
 }
 
-.disabled-form > h3 {
-    color:  var(--secondary-grey);
-}
-
 h3 {
     color: var(--primary-grey);
     font-weight: 500;
