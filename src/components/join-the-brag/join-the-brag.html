@@ -5,12 +5,12 @@
     <button class="mdc-button" [class.active-btn]="becomeBtnActive" (click)="becomeABragger()">Become a bragger</button>
     <button class="mdc-button" [class.active-btn]="suggestBtnActive" (click)="suggestABragger()">Suggest a bragger</button>
   </div>
-  <form [formGroup]="joinForm" (ngSubmit)="onSubmit()" method="POST">
+  <form [formGroup]="joinForm" (ngSubmit)="onSubmit()">
     <div class="form-info-div">
       <h3>Your information:</h3>
       <label class="mdc-text-field mdc-text-field--upgraded">
         <input type="text"
-               formControlName="firstName" 
+               formControlName="firstName"
                class="mdc-text-field__input" 
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
@@ -46,7 +46,7 @@
       <h3>Their information:</h3>
       <label class="mdc-text-field mdc-text-field--upgraded" [class.mdc-text-field--disabled]="formDisabled">
         <input type="text"
-               formControlName="firstNameSuggested" 
+               formControlName="firstNameSuggested"
                class="mdc-text-field__input"
                pattern="[A-Za-z]{2,}"
                (focus)="onFocus($event)" 
