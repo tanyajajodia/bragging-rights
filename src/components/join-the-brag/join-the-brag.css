@@ -107,6 +107,14 @@ h3 {
     background-color: var(--secondary-grey);
 }
 
+#progressbar {
+    margin-bottom: 3em;
+}
+
+.mdc-linear-progress__bar-inner {
+    background-color: var(--secondary-blue);
+}
+
 /* responsive design */
 
  /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */

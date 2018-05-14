@@ -12,7 +12,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
     "@angular/core": "^5.0.0",
@@ -24,6 +23,7 @@
     "@material/button": "^0.26.0",
     "@material/dialog": "^0.35.0",
     "@material/form-field": "^0.31.0",
+    "@material/linear-progress": "^0.35.0",
     "@material/textfield": "^0.26.0",
     "@types/material__dialog": "^0.26.0",
     "angular2-fontawesome": "^0.9.3",
@@ -33,6 +33,7 @@
     "html-form-send-email-via-google-script-without-server": "^2.1.0",
     "jquery": "^3.3.1",
     "ng2-charts": "^1.6.0",
+    "npm": "^6.0.1",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
