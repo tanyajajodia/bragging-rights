@@ -1,10 +1,10 @@
+import { element } from 'protractor';
 import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Menu } from '../menu/menu';
 import { MDCDialog } from '@material/dialog';
 import * as $ from 'jquery';
-import { forEach } from '@angular/router/src/utils/collection';
 
 
 @Component({
@@ -90,6 +90,7 @@ export class Join implements AfterViewInit {
 
     // submits the form
     onSubmit() {
+        document.getElementById('progressbar').style.display = 'block';
         const data = this.getData();
         this.sendEmail(data);
     }
@@ -140,8 +141,6 @@ export class Join implements AfterViewInit {
         xhr.open('POST', url);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.onreadystatechange = function() {
-            console.log(xhr.status, xhr.statusText);
-            console.log(xhr.responseText);
             joinComp.showConfirmationMessage();
             return;
         };
@@ -166,6 +165,7 @@ export class Join implements AfterViewInit {
         document.querySelector('#email-confirmation-description').innerHTML = confimationMessage;
 
         this.dialog.show();
+        document.getElementById('progressbar').style.display = 'none';
         this.dialog.listen('MDCDialog:accept', function() {
             dialogFoundation.adapter_.removeBodyClass('mdc-dialog-scroll-lock');
             router.navigateByUrl('braggers');

@@ -2,7 +2,8 @@
 @import "../node_modules/@material/button/dist/mdc.button.css";
 @import "../node_modules/@material/form-field/dist/mdc.form-field.css";
 @import "../node_modules/@material/textfield/dist/mdc.textfield.css";
-@import "../node_modules//@material/dialog/dist/mdc.dialog.css";
+@import "../node_modules/@material/dialog/dist/mdc.dialog.css";
+@import "../node_modules/@material/linear-progress/dist/mdc.linear-progress.css";
 @import "../node_modules/font-awesome/css/font-awesome.css";
 
 body {
