@@ -6,12 +6,12 @@ import { Menu } from '../menu/menu';
 
 
 @Component({
-    selector: 'braggers',
+    selector: 'app-braggers',
     templateUrl: 'braggers.html',
     styleUrls: [ 'braggers.css' ]
 })
 
-export class Braggers implements AfterViewInit {
+export class BraggersComponent implements AfterViewInit {
 
     @ViewChild(Menu) menuComponent: Menu;
     braggers: Array<Bragger> = [];

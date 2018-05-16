@@ -17,9 +17,14 @@ export class Menu {
         this.router.navigateByUrl('braggers');
     }
 
-    // navigate to become a bragger page
+    // navigate to join the brag page
     goToJoin() {
         this.router.navigateByUrl('join-the-brag');
+    }
+
+    // navigate to about page
+    goToAbout() {
+        this.router.navigateByUrl('about');
     }
 
     isActive( id: string ) {

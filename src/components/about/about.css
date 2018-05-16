@@ -1,0 +1,15 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+menu {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+title {
+    display: block;
+}

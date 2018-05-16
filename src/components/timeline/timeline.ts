@@ -5,12 +5,12 @@ import { BraggerService } from './../../services/bragger.service';
 import { Bragger } from './../home/home';
 
 @Component({
-    selector: 'timeline',
+    selector: 'app-timeline',
     templateUrl: 'timeline.html',
     styleUrls: ['timeline.css']
 })
 
-export class Timeline {
+export class TimelineComponent {
 
     // variables
     bragger: Bragger;
@@ -106,8 +106,7 @@ export class Timeline {
     traverseTimeline(keyPressed) {
         if (keyPressed === 'ArrowRight') {
             console.log('right');
-        }
-        else if (keyPressed === 'ArrowLeft') {
+        } else if (keyPressed === 'ArrowLeft') {
             console.log('left');
         }
     }
