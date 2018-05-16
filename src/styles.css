@@ -4,6 +4,7 @@
 @import "../node_modules/@material/textfield/dist/mdc.textfield.css";
 @import "../node_modules/@material/dialog/dist/mdc.dialog.css";
 @import "../node_modules/@material/linear-progress/dist/mdc.linear-progress.css";
+@import "../node_modules/@material/ripple/dist/mdc.ripple.css";
 @import "../node_modules/font-awesome/css/font-awesome.css";
 
 body {
