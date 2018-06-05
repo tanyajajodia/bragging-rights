@@ -6,6 +6,9 @@
     height: 38px;
     color: var(--primary-blue);
 }
+#header > button:hover {
+    color: var(--secondary-blue);
+}
 #title {
     margin-right: auto;
     margin-left: auto;

@@ -13,7 +13,7 @@ export class AppComponent {
     // preload images
     braggerService.preloadImages();
     // upon starting app, land on home view
-    this.router.navigateByUrl('about');
+    this.router.navigateByUrl('braggers');
   }
 }
 
