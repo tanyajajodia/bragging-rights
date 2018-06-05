@@ -1,4 +1,11 @@
-<menu></menu>
+<div id="header">
+  <button mat-raised-button (click)="goHome()">
+    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+  </button>
+  <div id="title">
+    <p>{{bragger.name}}'s Timeline</p>
+  </div>
+</div>
 <div class="timeline-grid" (window:keydown)="traverseTimeline($event.key)">
   <div class="emojis">
     <i class="fa fa-smile-o" aria-hidden="true"></i>

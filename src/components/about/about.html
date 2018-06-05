@@ -1,0 +1,59 @@
+<div class="about-page">
+    <menu></menu>
+    <title></title>
+    <h2 id="tagline">Everyone has a story.</h2>
+    <div class="about-content-div">
+        <p id="primary-info" class="content">
+            Bragging Rights is an opportunity to learn more about 
+            your coworkers as they share the highs and lows of their 
+            social/professional journey lines.
+        </p>
+    </div>
+    <button mat-raised-button class="content-btn" (click)="toggleContent('story')">
+        <div class="about-header">
+            <h3>Our Story</h3>
+        </div>  
+        <div id="story" class="about-content-div" hidden=true>
+            <p class="content">
+                Bragging Rights was conceptualized by <strong>Amy Dalton</strong> (UX Designer)
+                as a way to empower women to speak up about their achievements
+                and the obstacles they faced in pursuit of their goals. 
+                She approached <strong>Allyson Mackay</strong>  (Product Manager) with the idea. 
+                Allyson incorporated agile timelines to represent the history of 
+                the Braggers. Amy then approached <strong>AmbyrShae Jarrell</strong> 
+                (Software Engineer) to be one of the first Braggers. Once Amy 
+                explained the idea, AmbyrShae decided to build a web app that 
+                could be reused for other Braggers. Thus, the three women worked 
+                together to make the first Bragging Session a success.
+            </p>
+        </div>
+    </button>
+    <button mat-raised-button class="content-btn" (click)="toggleContent('join')">
+        <div class="about-header">
+            <h3>Join the Brag</h3>
+        </div>  
+        <div id="join" class="about-content-div" hidden=true>
+            <p class="content">
+                If you'd like to speak at one of the monthly sessions, nominate someone
+                to speak or host your own Bragging Rights sessions,<strong> please contact
+                Amy Dalton at amy.dalton@ge.com</strong>.
+            </p>
+        </div>
+    </button>
+    <button mat-raised-button class="content-btn" (click)="toggleContent('contribute')">
+        <div class="about-header">
+            <h3>Contribute</h3>
+        </div>  
+        <div id="contribute" class="about-content-div" hidden=true>
+            <p class="content">
+                Monthly Bragging Rights sessions are currently held by the 
+                Women's Network at GE Digital in New Orleans. Their first 
+                session was held in December 2017 and continues to grow. 
+                Thus, AmbyrShae adds new features in her spare 
+                time. <strong>If you would like to contribute to the web app, please submit a pull request at 
+                <a href="https://github.com/AmbyrShae/bragging-rights" target="_blank">github.com/AmbyrShae/bragging-rights</a></strong>. 
+                To learn more about AmbyrShae, please visit <a href="https://ambyrshae.com" target="_blank">ambyrshae.com</a>.
+            </p>
+        </div>
+    </button>
+</div>

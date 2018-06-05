@@ -8,12 +8,12 @@ import * as $ from 'jquery';
 
 
 @Component({
-    selector: 'join-the-brag',
+    selector: 'app-join-the-brag',
     templateUrl: 'join-the-brag.html',
     styleUrls: [ 'join-the-brag.css' ]
 })
 
-export class Join implements AfterViewInit {
+export class JoinComponent implements AfterViewInit {
 
     @ViewChild(Menu) menuComponent: Menu;
     becomeBtnActive = true;
