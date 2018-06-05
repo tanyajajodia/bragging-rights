@@ -100,7 +100,7 @@ export class TimelineComponent {
     }
 
     goHome() {
-        this.router.navigateByUrl('../home');
+        this.router.navigateByUrl('braggers');
     }
 
     traverseTimeline(keyPressed) {

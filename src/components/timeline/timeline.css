@@ -1,18 +1,32 @@
+#header {
+    display: flex;
+    width: 100%;
+}
+#header > button {
+    height: 38px;
+    color: var(--primary-blue);
+}
+#title {
+    margin-right: auto;
+    margin-left: auto;
+}
+#title > p {
+    font-weight: 200;
+    font-size: 1.5em;
+    color: var(--primary-grey);
+    letter-spacing: 0.06em;
+}
+
 .timeline-grid {
     display: flex;
     margin-top: 25px;
-}
-
-menu {
-    width: 100%;
-    padding: 0;
 }
 
 .emojis {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 60px 0;
     color: var(--primary-grey);
     margin-left: 19px;
 }

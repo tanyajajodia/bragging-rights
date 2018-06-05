@@ -22,7 +22,7 @@ title {
     width: calc(100% - 50px);
 }
 
-.mdc-button--raised {
+.bragger-btn {
     display: flex;
     border-width: 0;
     margin: 10px;
@@ -33,7 +33,7 @@ title {
     width: 419px;
 }
 
-.mdc-button--raised:focus {
+.bragger-btn:focus {
     outline: none;
     border: 0;
  }
@@ -85,7 +85,7 @@ title {
     .bragger-div {
         width: 100%;
     }
-    .mdc-button--raised {
+    .bragger-btn {
         width: 100%;
         padding: 0;
     }
