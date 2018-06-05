@@ -16,10 +16,15 @@ title {
 }
 
 #tagline {
-    font-weight: lighter;
+    font-weight: 200;
+    margin-bottom: 0;
 }
 
-.mdc-button--raised {
+#primary-info {
+    text-align: center;
+}
+
+.content-btn {
     display: flex;
     flex-direction: column;
     border-width: 0;
@@ -28,11 +33,7 @@ title {
     color: var(--primary-grey);
     font-size: 1.25em;
     width: 70%;
-}
-
-.mdc-button--raised:focus {
-    outline: none;
-    border: 0;
+    white-space: normal;
 }
 
 h3 {
@@ -44,7 +45,7 @@ h3 {
 }
 
 .about-content-div {
-    width: 100%;
+    width: 65vw;
 }
 
 .content {

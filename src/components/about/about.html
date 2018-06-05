@@ -2,20 +2,18 @@
     <menu></menu>
     <title></title>
     <h2 id="tagline">Everyone has a story.</h2>
-    <button class="mdc-button--raised">
-        <div class="about-content-div">
-            <p id="primary-info" class="content">
-                Bragging Rights is an opportunity to learn more about 
-                your coworkers as they share the highs and lows of their 
-                social/professional journey lines.
-            </p>
-        </div>
-    </button>
-    <button class="mdc-button--raised">
+    <div class="about-content-div">
+        <p id="primary-info" class="content">
+            Bragging Rights is an opportunity to learn more about 
+            your coworkers as they share the highs and lows of their 
+            social/professional journey lines.
+        </p>
+    </div>
+    <button mat-raised-button class="content-btn" (click)="toggleContent('story')">
         <div class="about-header">
             <h3>Our Story</h3>
         </div>  
-        <div class="about-content-div">
+        <div id="story" class="about-content-div" hidden=true>
             <p class="content">
                 Bragging Rights was conceptualized by Amy Dalton (UX Designer)
                 as a way to empower women to speak up about their achievements
@@ -30,32 +28,32 @@
             </p>
         </div>
     </button>
-    <button class="mdc-button--raised">
+    <button mat-raised-button class="content-btn" (click)="toggleContent('join')">
         <div class="about-header">
-            <h3>Grace Hopper Conference</h3>
+            <h3>Join the Brag</h3>
         </div>  
-        <div class="about-content-div">
+        <div id="join" class="about-content-div" hidden=true>
             <p class="content">
-                Amy, Allyson and AmbyrShae submitted a proposal to the Grace 
-                Hopper Conference to showcase Bragging Rights at their 2018 
-                conference. Their hope is that by exposing Bragging Rights, it can be 
-                incorporated in many environments to empower women to speak up 
-                about their accomplishments.
+                If you'd like to speak at one of the monthly sessions, nominate someone
+                to speak or bring Bragging Rights to your site, please contact Amy Dalton
+                at amy.dalton@ge.com.
             </p>
         </div>
     </button>
-    <button class="mdc-button--raised">
+    <button mat-raised-button class="content-btn" (click)="toggleContent('contribute')">
         <div class="about-header">
-            <h3>GitHub</h3>
+            <h3>Contribute</h3>
         </div>  
-        <div class="about-content-div">
+        <div id="contribute" class="about-content-div" hidden=true>
             <p class="content">
                 Monthly Bragging Rights sessions are currently held by the 
                 Women's Network at GE Digital in New Orleans. Thier first 
                 session was held in December 2017 and continues to grow. 
-                Thus, AmbyrShae continues to add new features in her spare 
+                Thus, AmbyrShae adds new features in her spare 
                 time. If you would like to contribute to the web app, please submit 
-                a pull request at https://github.com/AmbyrShae/bragging-rights.
+                a pull request at 
+                <a href="https://github.com/AmbyrShae/bragging-rights">github.com/AmbyrShae/bragging-rights</a>. 
+                To learn more about AmbyrShae, please visit <a href="https://ambyrshae.com">ambyrshae.com</a>.
             </p>
         </div>
     </button>

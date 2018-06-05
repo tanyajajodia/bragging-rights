@@ -11,11 +11,19 @@ import { Menu } from '../menu/menu';
 export class AboutComponent implements AfterViewInit {
 
     @ViewChild(Menu) menuComponent: Menu;
-
     constructor () {}
 
     // highlights menu according to what page you are currently viewing
     ngAfterViewInit() {
         this.menuComponent.isActive('about');
+    }
+
+    toggleContent(id: string): void {
+        const contentDiv = document.getElementById(id);
+        if (contentDiv.hidden) {
+            contentDiv.hidden = false;
+        } else {
+            contentDiv.setAttribute('hidden', 'true');
+        }
     }
 }

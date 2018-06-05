@@ -19,7 +19,7 @@ import { AboutComponent } from './../components/about/about';
 import { BraggerService } from './../services/bragger.service';
 
 // Material
-import { MatButtonModule, MatIconModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -46,7 +46,6 @@ const appRoutes: Routes = [
     ChartsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatIconModule,
     BrowserAnimationsModule
   ],
   providers: [ BraggerService ],
