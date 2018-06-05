@@ -2,7 +2,7 @@
     <menu></menu>
     <title></title>    
     <div class="bragger-div">
-        <button mat-raised-button class="bragger-btn" *ngFor="let bragger of braggers" (click)="goToTimeline(bragger)">
+        <button class="mdc-button--raised" *ngFor="let bragger of braggers" (click)="goToTimeline(bragger)">
             <div class="img-div" [ngSwitch]="bragger.imgName == null">
               <img *ngSwitchCase="true" src="./assets/img/default.png">
               <img *ngSwitchCase="false" src="./assets/img/{{bragger.imgName}}">
