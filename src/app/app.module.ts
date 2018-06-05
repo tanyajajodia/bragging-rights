@@ -11,6 +11,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 // Components
 import { Title } from './../components/title/title';
 import { Menu } from './../components/menu/menu';
+import { HomeComponent } from './../components/home/home';
 import { BraggersComponent } from './../components/braggers/braggers';
 import { TimelineComponent } from './../components/timeline/timeline';
 import { AboutComponent } from './../components/about/about';
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
     TimelineComponent,
     Title,
     Menu,
+    HomeComponent,
     BraggersComponent,
     AboutComponent
   ],

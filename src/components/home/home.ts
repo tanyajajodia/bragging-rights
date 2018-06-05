@@ -5,12 +5,12 @@ import { Menu } from './../menu/menu';
 
 
 @Component({
-    selector: 'home',
+    selector: 'app-home',
     templateUrl: 'home.html',
     styleUrls: [ 'home.css' ]
 })
 
-export class Home implements AfterViewInit {
+export class HomeComponent implements AfterViewInit {
 
     @ViewChild(Menu) menuComponent: Menu;
 
