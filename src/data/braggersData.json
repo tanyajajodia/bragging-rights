@@ -83,6 +83,7 @@
                      "2018: Offer on Horse Farm"
             ],
             "bragValue": [4, 3, 4, 5, 4, 5, 3, 5, 4, 4, 4, 4, -2, 3, 2, -2, -5, -4, 4, 5, 2, 4, -5, 4],
+            "imgName": "KristenFoster.jpg",
             "sessionDate": "September 2018"
         },
         {
@@ -128,6 +129,71 @@
             "bragValue": [5, 5, 5, 5, -5, 5, -5, 5, 5, -5, 5, 5, 5, -5, 5, 5, 5, -5, 5, 5, 5, -5, 5, 5, 5, 5, 5, -5, -5, 5, 5, -5, 5],
             "imgName": "Lynn-AnnDeRose.jpg",
             "sessionDate": "September 2018"
+        },
+        {
+            "name": "Lisa Sawczuk",
+            "jobTitle": "Staff UX Interaction Designer",
+            "bu": "GE Digital",
+            "careerLength": "17",
+            "brag": [
+                     "1980: Childhood/My Zero",
+                     "1999: Undergrad, SUNY Albany",
+                     "2002: Internship – Office of Children and Family Services",
+                     "2003: Mom’s Cancer",
+                     "2003: Continue Internship + Start Grad School",
+                     "2003: Mom’s Recovery from Cancer",
+                     "2005: NYS Employment",
+                     "2005: Built 1st Home",
+                     "2005: Marriage",
+                     "2006: Monica is Born",
+                     "2007: Grad School, RIT",
+                     "2008: Husband’s Cancer",
+                     "2010: Moving from Public to Private Sector",
+                     "2010: MS IT – HCI, Project Management, Object Oriented Design",
+                     "2011: Eva is Born",
+                     "2013: Director of Product Management",
+                     "2014: Built 2nd Home",
+                     "2015: Separation/Divorce",
+                     "2017: Bought 1st Home + Rebuilding",
+                     "2017: GE – Staff UX Interaction Designer"
+            ],
+            "bragValue": [0, 2, 3, -3, 0, 4, 3, 4, 4, 5, 4, -2, 3, 4, 5, 3, -3, 1, 3, 3],
+            "imgName": "LisaSawczuk.png",
+            "sessionDate": "October 2018"
+        },
+        {
+            "name": "Abby Fitzpatrick",
+            "jobTitle": "Lead Design Engineer/Operation Leader – PGSE Accessories",
+            "bu": "GE Power – Power Services",
+            "careerLength": "8",
+            "brag": [
+                     "2006: Whole Foods",
+                     "2006: Uconn Honors Program",
+                     "2008: Interned at Consumer & Industrial in Plainville",
+                     "2009: Interned at Power in Schenectady",
+                     "2010: Graduated University of Connecticut",
+                     "2010: Started working at Westinghouse as Assistant Project Manager",
+                     "2011: Started working at GE Power as Accessories Engineer",
+                     "2012: COMPEX Certified",
+                     "2012: Hiked the Northville Placid Trail",
+                     "2013: Accepted into Advanced Course in Engineering program",
+                     "2013: Turn down offer to Intertek",
+                     "2014: Mittelsburen Remote Degas Commissioned",
+                     "2014: Move to Oil Systems/CM&U team",
+                     "2015: Move to Accessories Engineering in Services",
+                     "2016: Promoted to LP",
+                     "2016: Graduated GT w/ Masters",
+                     "2016: Finished Hiking the High Peaks",
+                     "2016: Married",
+                     "2016: Graduated ACE program",
+                     "2016: Accepted into Cultivate Program",
+                     "2017: Spoke at Uconn",
+                     "2017: Promoted to Operations Leader",
+                     "2017: Son is Born"
+            ],
+            "bragValue": [5, 4, 0, 1, 3, -4, 2, 5, 5, 3, -1, 4, 3, 4, 5, 5, 5, 5, 5, 5, 4, 3, 5],
+            "imgName": "AbbyFitzpatrick.png",
+            "sessionDate": "October 2018"
         }
     ]
 }
