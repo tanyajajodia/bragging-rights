@@ -194,6 +194,40 @@
             "bragValue": [5, 4, 0, 1, 3, -4, 2, 5, 5, 3, -1, 4, 3, 4, 5, 5, 5, 5, 5, 5, 4, 3, 5],
             "imgName": "AbbyFitzpatrick.png",
             "sessionDate": "October 2018"
+        },
+        {
+            "name": "Pat Mackenzie",
+            "jobTitle": "GE Principal Engineer - Retired",
+            "bu": "GE Global Research",
+            "careerLength": "34",
+            "brag": [
+                     "1965: Great childhood; football?",
+                     "1975: University of Delaware – Chemical Engineering",
+                     "1979: University of California, Berkeley - ChE",
+                     "1984: GE Corporate Research & Development – Chem Eng",
+                     "1987: Polycarbonate Cyclics Isolation",
+                     "1991: Environmental Lab",
+                     "1992: Kids!!!",
+                     "1993: DOE Contract – Organic Sponge",
+                     "1994: Iron Wall; start working with Joe",
+                     "1996: Tutoring Program",
+                     "1998: VMI",
+                     "2000: GEOPS – Global VMI",
+                     "2005: VeriWise; Innovation Park",
+                     "2008: GE Capital sell off",
+                     "2009: Wind Visibility and Modeling",
+                     "2012: SWCOE",
+                     "2013: Life Sciences Industrial Internet",
+                     "2014: Supply Chain Optimization and Brilliant Factory",
+                     "2015: Industrial Internet Conference at GRC",
+                     "2016: Reorgs and refocus",
+                     "2016: 60!!!",
+                     "2017: Supply Chain Optimization; externals; Digital Parts",
+                     "2018: Retire"
+            ],
+            "bragValue": [5, 3, 5, 3, 5, 3, 5, 4, 5, 5, 5, 3, 5, 3, 5, 2, 4, 5, 5, 3, 5, 5, 5],
+            "imgName": "PatMackenzie.jpeg",
+            "sessionDate": "October 2018"
         }
     ]
 }
